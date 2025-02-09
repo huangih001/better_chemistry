@@ -61,7 +61,7 @@ public class ShiyanTaiDangYouJiFangKuaiShiProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 49, Level.ExplosionInteraction.TNT);
+				_level.explode(null, x, y, z, 6, Level.ExplosionInteraction.TNT);
 		}
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == RestartChemistryModItems.LIUDANZHI.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
