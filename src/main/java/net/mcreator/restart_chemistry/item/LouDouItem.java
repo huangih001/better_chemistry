@@ -21,6 +21,6 @@ public class LouDouItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u6F0F\u6597\u2014\u2014\u8FC7\u6EE4\u5C0F\u6742\u8D28\u7684\u5DE5\u5177"));
+		list.add(Component.translatable("item.restart_chemistry.lou_dou.description_0"));
 	}
 }

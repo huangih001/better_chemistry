@@ -84,18 +84,35 @@ public class Shiyantai3Menu extends AbstractContainerMenu implements Supplier<Ma
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 51, 50) {
+			private final int slot = 0;
+			private int x = Shiyantai3Menu.this.x;
+			private int y = Shiyantai3Menu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 231, 50) {
+			private final int slot = 1;
+			private int x = Shiyantai3Menu.this.x;
+			private int y = Shiyantai3Menu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 132, 77) {
+			private final int slot = 2;
+			private int x = Shiyantai3Menu.this.x;
+			private int y = Shiyantai3Menu.this.y;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 78, 50) {
+			private final int slot = 3;
+			private int x = Shiyantai3Menu.this.x;
+			private int y = Shiyantai3Menu.this.y;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 204, 50) {
+			private final int slot = 4;
+			private int x = Shiyantai3Menu.this.x;
+			private int y = Shiyantai3Menu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

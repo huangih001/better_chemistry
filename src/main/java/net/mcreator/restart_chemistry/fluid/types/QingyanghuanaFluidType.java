@@ -24,7 +24,8 @@ public class QingyanghuanaFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("restart_chemistry:block/qing_yang_hua_na_jing_tai_"), FLOWING_TEXTURE = ResourceLocation.parse("restart_chemistry:block/qingyanghuanadongtai");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("restart_chemistry:block/qing_yang_hua_na_jing_tai_");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("restart_chemistry:block/qingyanghuanadongtai");
 
 			@Override
 			public ResourceLocation getStillTexture() {

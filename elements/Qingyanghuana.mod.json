@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": " 氢氧化钠溶液",
     "bucketName": "氢氧化钠溶液",
     "textureStill": "qing_yang_hua_na_jing_tai_",
     "textureFlowing": "qingyanghuanadongtai",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 8,

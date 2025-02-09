@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "shi_yan_shi_dian_jie_chi_",
@@ -198,7 +198,6 @@
     "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

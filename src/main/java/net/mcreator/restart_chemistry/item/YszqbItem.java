@@ -21,6 +21,6 @@ public class YszqbItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u4E00\u4E2A\u6B63\u5728\u63A2\u7D22\u4E2D\u7684\u7EC8\u7AEF\u8BB0\u5F55\u4EEA"));
+		list.add(Component.translatable("item.restart_chemistry.yszqb.description_0"));
 	}
 }

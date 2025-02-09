@@ -21,6 +21,6 @@ public class ShaoPingItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u70E7\u74F6\u2014\u2014\u7ECF\u5E38\u4F5C\u4E3A\u6DB2\u4F53\u4E4B\u95F4\u53CD\u5E94\u573A\u6240"));
+		list.add(Component.translatable("item.restart_chemistry.shao_ping.description_0"));
 	}
 }

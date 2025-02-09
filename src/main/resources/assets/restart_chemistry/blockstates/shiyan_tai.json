@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "restart_chemistry:block/shiyan_tai"
+    },
+    "facing=east": {
+      "model": "restart_chemistry:block/shiyan_tai",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "restart_chemistry:block/shiyan_tai",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "restart_chemistry:block/shiyan_tai",
+      "y": 270
     }
   }
 }

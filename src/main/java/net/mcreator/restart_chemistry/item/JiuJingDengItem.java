@@ -21,7 +21,7 @@ public class JiuJingDengItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u9152\u7CBE\u706F-\u70B9\u71C3\u8DDF\u52A0\u70ED\u64CD\u4F5C\u7684\u597D\u5E2E\u624B"));
-		list.add(Component.literal("\u4E0D\u8981\u8BD5\u56FE\u7528\u9152\u7CBE\u706F\u70B9\u71C3\u53E6\u4E00\u4E2A\u9152\u7CBE\u706F"));
+		list.add(Component.translatable("item.restart_chemistry.jiu_jing_deng.description_0"));
+		list.add(Component.translatable("item.restart_chemistry.jiu_jing_deng.description_1"));
 	}
 }

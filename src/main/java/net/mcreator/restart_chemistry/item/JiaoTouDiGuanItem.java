@@ -21,6 +21,6 @@ public class JiaoTouDiGuanItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u80F6\u5934\u6EF4\u7BA1\u2014\u2014\u662F\u7528\u4E8E\u5438\u53D6\u6216\u6EF4\u52A0\u5C11\u91CF\u6DB2\u4F53\u8BD5\u5242\u7684\u4E00\u79CD\u4EEA\u5668"));
+		list.add(Component.translatable("item.restart_chemistry.jiao_tou_di_guan.description_0"));
 	}
 }

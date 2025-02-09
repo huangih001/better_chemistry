@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "restart_chemistry:dianjie_chi",
-    "restart_chemistry:rongyandianjiechi"
+    "restart_chemistry:rongyandianjiechi",
+    "restart_chemistry:dianjie_chi"
   ]
 }

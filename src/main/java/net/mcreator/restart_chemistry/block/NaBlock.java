@@ -34,9 +34,9 @@ public class NaBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u94A0\u5728\u5468\u671F\u8868\u4E2D\u4F4D\u4E8E\u7B2C3\u5468\u671F\u3001\u7B2C\u2160A\u65CF "));
-		list.add(Component.literal("\u662F\u78B1\u91D1\u5C5E\u5143\u7D20\u7684\u4EE3\u8868\uFF0C\u8D28\u5730\u67D4\u8F6F"));
-		list.add(Component.literal("\u53EF\u4EE5\u8BD5\u8BD5\u5728\u94A0\u5757\u65C1\u8FB9\u5012\u4E00\u6876\u6C34\uFF0C\u4F1A\u6709\u5947\u5999\u7684\u53CD\u5E94"));
+		list.add(Component.translatable("block.restart_chemistry.na1.description_0"));
+		list.add(Component.translatable("block.restart_chemistry.na1.description_1"));
+		list.add(Component.translatable("block.restart_chemistry.na1.description_2"));
 	}
 
 	@Override

@@ -29,7 +29,7 @@ public class DianjieChiBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u7535\u89E3\u6C60-\u5316\u5B66\u7684\u57FA\u7840"));
+		list.add(Component.translatable("block.restart_chemistry.dianjie_chi.description_0"));
 	}
 
 	@Override

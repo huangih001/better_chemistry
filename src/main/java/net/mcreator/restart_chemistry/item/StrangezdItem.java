@@ -21,6 +21,6 @@ public class StrangezdItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u4E00\u4E2A\u5947\u602A\u7684\u7EC8\u7AEF\uFF0C\u53F3\u952E\u6216\u8BB8\u4F1A\u51FA\u73B0\u4E9B\u4EC0\u4E48"));
+		list.add(Component.translatable("item.restart_chemistry.strangezd.description_0"));
 	}
 }
