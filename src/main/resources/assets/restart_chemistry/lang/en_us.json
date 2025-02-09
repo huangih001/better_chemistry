@@ -1,7 +1,7 @@
 {
   "item.restart_chemistry.jiao_tou_di_guan.description_0": "胶头滴管——是用于吸取或滴加少量液体试剂的一种仪器",
-  "item.restart_chemistry.jiu_jing_deng": "酒精灯",
   "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
+  "item.restart_chemistry.jiu_jing_deng": "酒精灯",
   "advancements.daoguan_2.title": " 玻璃导管",
   "death.attack.salt_2.item": "%1$s   死于吃盐过量导致的肾衰竭",
   "gui.restart_chemistry.shiyantai_3.button_fan_ying": "反应",

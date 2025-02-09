@@ -971,6 +971,188 @@
           }
         ]
       }
+    },
+    {
+      "name": "ShiyanTaiDangFangKuaiBeiTiHuanShi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiyan_tai_dang_fang_kuai_bei_ti_huan_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/ShiyanTaiDangFangKuaiBeiTiHuanShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Placexyz",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "placexyz",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/PlacexyzProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "maxx",
+            "type": "number"
+          },
+          {
+            "name": "maxy",
+            "type": "number"
+          },
+          {
+            "name": "maxz",
+            "type": "number"
+          },
+          {
+            "name": "minx",
+            "type": "number"
+          },
+          {
+            "name": "miny",
+            "type": "number"
+          },
+          {
+            "name": "minz",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Placeconflict",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "placeconflict",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/PlaceconflictProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "maxx",
+            "type": "number"
+          },
+          {
+            "name": "maxy",
+            "type": "number"
+          },
+          {
+            "name": "maxz",
+            "type": "number"
+          },
+          {
+            "name": "minx",
+            "type": "number"
+          },
+          {
+            "name": "miny",
+            "type": "number"
+          },
+          {
+            "name": "minz",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fangkuaipanding",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fangkuaipanding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/FangkuaipandingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1006,14 +1188,19 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Qingyanghuana"
+    ],
+    "BLOCKS:mod:tag3": [
+      "CUSTOM:ShiyanTai",
+      "CUSTOM:DianjieChi",
+      "CUSTOM:Rongyandianjiechi"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.restart_chemistry.jiao_tou_di_guan.description_0": "胶头滴管——是用于吸取或滴加少量液体试剂的一种仪器",
-      "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
+      "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "advancements.daoguan_2.title": " 玻璃导管",
       "death.attack.salt_2.item": "%1$s   死于吃盐过量导致的肾衰竭",
       "gui.restart_chemistry.shiyantai_3.button_fan_ying": "反应",
@@ -1105,8 +1292,8 @@
     },
     "zh_cn": {
       "item.restart_chemistry.jiao_tou_di_guan.description_0": "胶头滴管——是用于吸取或滴加少量液体试剂的一种仪器",
-      "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
+      "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "advancements.daoguan_2.title": " 玻璃导管",
       "death.attack.salt_2.item": "%1$s  被咸死了",
       "block.restart_chemistry.na": "钠块",

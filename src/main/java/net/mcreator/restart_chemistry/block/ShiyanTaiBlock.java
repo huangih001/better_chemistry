@@ -78,10 +78,10 @@ public class ShiyanTaiBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(-16, 0, 0, 32, 16, 16);
-			case NORTH -> box(-16, 0, 0, 32, 16, 16);
-			case EAST -> box(0, 0, -16, 16, 16, 32);
-			case WEST -> box(0, 0, -16, 16, 16, 32);
+			default -> Shapes.or(box(16, 0, 0, 32, 16, 16), box(0, 0, 0, 16, 16, 16), box(-16, 0, 0, 0, 16, 16));
+			case NORTH -> Shapes.or(box(-16, 0, 0, 0, 16, 16), box(0, 0, 0, 16, 16, 16), box(16, 0, 0, 32, 16, 16));
+			case EAST -> Shapes.or(box(0, 0, -16, 16, 16, 0), box(0, 0, 0, 16, 16, 16), box(0, 0, 16, 16, 16, 32));
+			case WEST -> Shapes.or(box(0, 0, 16, 16, 16, 32), box(0, 0, 0, 16, 16, 16), box(0, 0, -16, 16, 16, 0));
 		};
 	}
 

@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "restart_chemistry:block/dianjie_chi"
+    },
+    "facing=east": {
+      "model": "restart_chemistry:block/dianjie_chi",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "restart_chemistry:block/dianjie_chi",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "restart_chemistry:block/dianjie_chi",
+      "y": 270
     }
   }
 }
