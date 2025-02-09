@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/lou_dou_",
+  "textures": {
+    "1": "restart_chemistry:block/lou_dou_",
+    "particle": "restart_chemistry:item/lou_dou_"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/bu_quan_de_yuan_su_zhou_qi_biao_",
+  "textures": {
+    "1": "restart_chemistry:block/bu_quan_de_yuan_su_zhou_qi_biao_",
+    "particle": "restart_chemistry:item/bu_quan_de_yuan_su_zhou_qi_biao_"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "chemistry": {
+    "sounds": [
+      {
+        "name": "restart_chemistry:hua_xue_shi_yan_kai_tou_",
+        "stream": true
+      }
+    ]
+  }
+}

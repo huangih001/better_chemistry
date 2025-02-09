@@ -1,0 +1,9 @@
+{
+  "parent": "restart_chemistry:custom/sodium_oxide_block",
+  "textures": {
+    "all": "restart_chemistry:block/yang_hua_na_",
+    "particle": "restart_chemistry:block/yang_hua_na_",
+    "0": "restart_chemistry:block/yang_hua_na_"
+  },
+  "render_type": "solid"
+}

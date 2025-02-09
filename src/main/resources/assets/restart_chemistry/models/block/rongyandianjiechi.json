@@ -1,0 +1,9 @@
+{
+  "parent": "restart_chemistry:custom/rong_yan_dian_jie_lu_",
+  "textures": {
+    "all": "restart_chemistry:block/yan_lei_dian_jie_chi_",
+    "particle": "restart_chemistry:block/yan_lei_dian_jie_chi_",
+    "0": "restart_chemistry:block/yan_lei_dian_jie_chi_"
+  },
+  "render_type": "solid"
+}

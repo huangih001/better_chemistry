@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "restart_chemistry:salt"
+    },
+    "title": {
+      "translate": "advancements.salt_1.title"
+    },
+    "description": {
+      "translate": "advancements.salt_1.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "salt_1_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "restart_chemistry:salt"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "restart_chemistry:sodium"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/qi_guai_de_zhong_duan_",
+  "textures": {
+    "2": "restart_chemistry:block/qi_guai_de_zhong_duan_",
+    "particle": "restart_chemistry:item/qi_guai_de_zhong_duan_"
+  }
+}

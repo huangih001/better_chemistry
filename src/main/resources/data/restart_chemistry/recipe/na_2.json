@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "restart_chemistry:na1"
+    }
+  ],
+  "result": {
+    "id": "restart_chemistry:handna",
+    "count": 9
+  }
+}

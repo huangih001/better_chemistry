@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "tab",
+  "definition": {
+    "name": " 重启：化学",
+    "icon": {
+      "value": "CUSTOM:Logo"
+    },
+    "showSearch": false
+  }
+}

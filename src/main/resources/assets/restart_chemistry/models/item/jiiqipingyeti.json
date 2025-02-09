@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/ye_ti_",
+  "textures": {
+    "1": "restart_chemistry:block/ye_ti_",
+    "particle": "restart_chemistry:item/ye_ti_"
+  }
+}

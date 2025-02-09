@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/qi_ti_",
+  "textures": {
+    "0": "restart_chemistry:block/qi_ti_",
+    "particle": "restart_chemistry:item/qi_ti_"
+  }
+}

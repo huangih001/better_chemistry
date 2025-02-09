@@ -1,0 +1,9 @@
+{
+  "parent": "restart_chemistry:custom/natrium_block",
+  "textures": {
+    "all": "restart_chemistry:block/fang_kuai_na_2",
+    "particle": "restart_chemistry:block/fang_kuai_na_2",
+    "1": "restart_chemistry:block/fang_kuai_na_2"
+  },
+  "render_type": "solid"
+}

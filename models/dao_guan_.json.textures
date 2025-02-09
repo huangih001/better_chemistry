@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "dao_guan_"
+      },
+      "name": "default"
+    }
+  }
+}

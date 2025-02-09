@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "bu_quan_de_yuan_su_zhou_qi_biao_"
+      },
+      "name": "default"
+    }
+  }
+}

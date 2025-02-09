@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "restart_chemistry:liudanzhi"
+    }
+  },
+  "result": {
+    "id": "restart_chemistry:liukuai",
+    "count": 1
+  }
+}

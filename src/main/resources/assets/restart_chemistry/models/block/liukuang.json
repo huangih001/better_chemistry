@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "restart_chemistry:block/liu_huang_kuang_",
+    "up": "restart_chemistry:block/liu_huang_kuang_",
+    "north": "restart_chemistry:block/liu_huang_kuang_",
+    "east": "restart_chemistry:block/liu_huang_kuang_",
+    "south": "restart_chemistry:block/liu_huang_kuang_",
+    "west": "restart_chemistry:block/liu_huang_kuang_",
+    "particle": "restart_chemistry:block/liu_huang_kuang_"
+  },
+  "render_type": "solid"
+}

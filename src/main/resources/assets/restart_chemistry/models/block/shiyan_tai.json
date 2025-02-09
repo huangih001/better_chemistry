@@ -1,0 +1,9 @@
+{
+  "parent": "restart_chemistry:custom/shi_yan_tai_",
+  "textures": {
+    "all": "restart_chemistry:block/shi_yan_tai_",
+    "particle": "restart_chemistry:block/shi_yan_tai_",
+    "1": "restart_chemistry:block/shi_yan_tai_"
+  },
+  "render_type": "solid"
+}

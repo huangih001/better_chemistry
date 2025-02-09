@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/xiao_tou_di_guan_",
+  "textures": {
+    "1": "restart_chemistry:block/xiao_tou_di_guan_",
+    "particle": "restart_chemistry:item/xiao_tou_di_guan_"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "restart_chemistry:shi_guan"
+    },
+    "title": {
+      "translate": "advancements.shiguan_2.title"
+    },
+    "description": {
+      "translate": "advancements.shiguan_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shiguan_2_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "restart_chemistry:shi_guan"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "restart_chemistry:shiyantai_2"
+}

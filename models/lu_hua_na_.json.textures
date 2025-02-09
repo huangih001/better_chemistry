@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lu_hua_na_"
+      },
+      "name": "default"
+    }
+  }
+}

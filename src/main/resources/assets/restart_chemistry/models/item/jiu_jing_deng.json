@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/jiu_jing_deng_",
+  "textures": {
+    "0": "restart_chemistry:block/jiu_jing_deng_",
+    "particle": "restart_chemistry:item/jiu_jing_deng_"
+  }
+}

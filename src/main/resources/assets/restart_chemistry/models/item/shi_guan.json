@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/shi_guan_",
+  "textures": {
+    "0": "restart_chemistry:block/shi_guan_",
+    "particle": "restart_chemistry:item/shi_guan_"
+  }
+}

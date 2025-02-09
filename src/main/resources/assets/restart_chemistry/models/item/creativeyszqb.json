@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/chuang_zao_mo_shi_yuan_su_zhou_qi_biao_",
+  "textures": {
+    "1": "restart_chemistry:block/chuang_zao_mo_shi_yuan_su_zhou_qi_biao_",
+    "particle": "restart_chemistry:item/chuang_zao_mo_shi_yuan_su_zhou_qi_biao_"
+  }
+}

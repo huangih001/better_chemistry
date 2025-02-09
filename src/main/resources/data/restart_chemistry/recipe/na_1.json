@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "restart_chemistry:handna"
+    }
+  },
+  "result": {
+    "id": "restart_chemistry:na1",
+    "count": 1
+  }
+}

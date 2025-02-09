@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "jiu_jing_deng_"
+      },
+      "name": "default"
+    }
+  }
+}

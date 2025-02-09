@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/lu_hua_na_",
+  "textures": {
+    "0": "restart_chemistry:block/lu_hua_na_",
+    "particle": "restart_chemistry:item/lu_hua_na_"
+  }
+}

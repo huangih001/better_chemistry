@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 4.0,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s   死于吃盐过量导致的肾衰竭",
+    "itemDeathMessage": "%1$s   死于吃盐过量导致的肾衰竭",
+    "playerDeathMessage": "%1$s   死于吃盐过量导致的肾衰竭"
+  }
+}

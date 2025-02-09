@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "restart_chemistry:blocks/sodiumoxideblock",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "restart_chemistry:sodiumoxideblock"
+        }
+      ]
+    }
+  ]
+}

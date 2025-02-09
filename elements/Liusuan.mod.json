@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.0,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s  被腐蚀了",
+    "itemDeathMessage": "%1$s  被腐蚀了",
+    "playerDeathMessage": "%1$s  在逃离 %2$s时，跳入了硫酸中"
+  }
+}

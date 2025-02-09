@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "fang_kuai_na_2"
+      },
+      "name": "default"
+    }
+  }
+}

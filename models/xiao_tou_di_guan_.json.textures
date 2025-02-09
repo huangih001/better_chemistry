@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "xiao_tou_di_guan_"
+      },
+      "name": "default"
+    }
+  }
+}

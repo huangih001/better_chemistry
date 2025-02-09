@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/zhe_guang_ye_ti_",
+  "textures": {
+    "0": "restart_chemistry:block/zhe_guang_ye_ti_",
+    "particle": "restart_chemistry:item/zhe_guang_ye_ti_"
+  }
+}

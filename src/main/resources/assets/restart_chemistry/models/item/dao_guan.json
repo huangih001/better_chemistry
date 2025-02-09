@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/dao_guan_",
+  "textures": {
+    "3": "restart_chemistry:block/dao_guan_",
+    "particle": "restart_chemistry:item/dao_guan_"
+  }
+}

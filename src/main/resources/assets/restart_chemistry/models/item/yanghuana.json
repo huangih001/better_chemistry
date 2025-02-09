@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/yang_hua_na_fen_mo_",
+  "textures": {
+    "0": "restart_chemistry:block/yang_hua_na_1",
+    "particle": "restart_chemistry:item/yang_hua_na_"
+  }
+}

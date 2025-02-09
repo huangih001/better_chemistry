@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "shi_yan_tai_"
+      },
+      "name": "default"
+    }
+  }
+}

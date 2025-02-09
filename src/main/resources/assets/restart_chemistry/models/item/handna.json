@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/natrium_ingot",
+  "textures": {
+    "1": "restart_chemistry:block/6e60b18af026f0f9e56642949ea55547",
+    "particle": "restart_chemistry:item/6e60b18af026f0f9e56642949ea55547"
+  }
+}

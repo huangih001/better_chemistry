@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "restart_chemistry:sodiumoxideblock",
+    "restart_chemistry:na1"
+  ]
+}

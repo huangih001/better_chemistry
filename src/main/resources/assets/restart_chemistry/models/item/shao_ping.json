@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/shao_ping_",
+  "textures": {
+    "0": "restart_chemistry:block/shao_ping_",
+    "particle": "restart_chemistry:item/shao_ping_"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "restart_chemistry:sodiumoxideblock"
+  },
+  "result": {
+    "id": "restart_chemistry:yanghuana",
+    "count": 4
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "id": "restart_chemistry:shi_guan",
+    "count": 1
+  }
+}
