@@ -63,6 +63,7 @@ public class RestartChemistryModItems {
 	public static final DeferredItem<Item> JIQIPINGQITI = REGISTRY.register("jiqipingqiti", JiqipingqitiItem::new);
 	public static final DeferredItem<Item> JIIQIPINGYETI = REGISTRY.register("jiiqipingyeti", JiiqipingyetiItem::new);
 	public static final DeferredItem<Item> JIQIPINGZHEGUANGYETI = REGISTRY.register("jiqipingzheguangyeti", JiqipingzheguangyetiItem::new);
+	public static final DeferredItem<Item> NAFIRE_1 = block(RestartChemistryModBlocks.NAFIRE_1);
 
 	// Start of user code block custom items
 	// End of user code block custom items

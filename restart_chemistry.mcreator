@@ -1153,6 +1153,93 @@
           }
         ]
       }
+    },
+    {
+      "name": "Liusuan2",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liusuan_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/potion/Liusuan2MobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Liusuan2DangYaoShuiXiaoGuoKaiShiYingYongShi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liusuan_2_dang_yao_shui_xiao_guo_kai_shi_ying_yong_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/Liusuan2DangYaoShuiXiaoGuoKaiShiYingYongShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "QingyanghuanaShengWuWanJiaPengZhuangGaiFangKuaiShi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qingyanghuana_sheng_wu_wan_jia_peng_zhuang_gai_fang_kuai_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/QingyanghuanaShengWuWanJiaPengZhuangGaiFangKuaiShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nafire1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nafire_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/restart_chemistry/loot_table/blocks/nafire_1.json",
+          "src/main/java/net/mcreator/restart_chemistry/block/entity/Nafire1BlockEntity.java",
+          "src/main/resources/assets/restart_chemistry/models/item/nafire_1.json",
+          "src/main/resources/assets/restart_chemistry/models/block/nafire_1.json",
+          "src/main/resources/assets/restart_chemistry/blockstates/nafire_1.json",
+          "src/main/java/net/mcreator/restart_chemistry/block/Nafire1Block.java"
+        ]
+      }
+    },
+    {
+      "name": "Nafire1ShiTiZaiFangKuaiShangXingZouShi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nafire_1_shi_ti_zai_fang_kuai_shang_xing_zou_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/Nafire1ShiTiZaiFangKuaiShangXingZouShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1242,7 +1329,9 @@
       "gui.restart_chemistry.shiyantai_3.label_fan_ying_tiao_jian": "反应条件",
       "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液",
       "advancements.sodium.title": " 爆炸进行时？",
+      "block.restart_chemistry.nafire_1": "黄焰-钠",
       "advancements.jiujingdeng_2.descr": "可以使用酒精灯点燃另一个酒精灯了（确信",
+      "effect.restart_chemistry.liusuan_2": "腐蚀 ",
       "item.restart_chemistry.shao_bei": "烧杯",
       "block.restart_chemistry.rongyandianjiechi": "熔盐电解池",
       "advancements.dianjiechi_2.descr": "很酥麻的感觉",
@@ -1288,7 +1377,7 @@
       "item.restart_chemistry.allyszqb": "补全的元素周期表",
       "item.restart_chemistry.shao_ping": "烧瓶",
       "item.restart_chemistry.lou_dou": "漏斗",
-      "death.attack.liusuan.player": "%1$s  在逃离 %2$s时，跳入了硫酸中"
+      "death.attack.liusuan.player": "%1$s  被腐蚀了"
     },
     "zh_cn": {
       "item.restart_chemistry.jiao_tou_di_guan.description_0": "胶头滴管——是用于吸取或滴加少量液体试剂的一种仪器",
@@ -1336,7 +1425,9 @@
       "gui.restart_chemistry.shiyantai_3.label_fan_ying_tiao_jian": "反应条件",
       "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液瓶",
       "advancements.sodium.title": "Sodium",
+      "block.restart_chemistry.nafire_1": "黄焰-钠",
       "advancements.jiujingdeng_2.descr": "可以使用酒精灯点燃另一个酒精灯了（？）",
+      "effect.restart_chemistry.liusuan_2": " 2 ",
       "item.restart_chemistry.shao_bei": "烧杯",
       "block.restart_chemistry.rongyandianjiechi": "熔盐电解池",
       "advancements.dianjiechi_2.descr": "很酥麻的感觉",

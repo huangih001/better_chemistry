@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "restart_chemistry:block/na_fire1",
+    "particle": "restart_chemistry:block/na_fire1"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.restart_chemistry.init.RestartChemistryModTabs;
 import net.mcreator.restart_chemistry.init.RestartChemistryModSounds;
+import net.mcreator.restart_chemistry.init.RestartChemistryModMobEffects;
 import net.mcreator.restart_chemistry.init.RestartChemistryModMenus;
 import net.mcreator.restart_chemistry.init.RestartChemistryModItems;
 import net.mcreator.restart_chemistry.init.RestartChemistryModFluids;
@@ -51,6 +52,7 @@ public class RestartChemistryMod {
 
 		RestartChemistryModTabs.REGISTRY.register(modEventBus);
 
+		RestartChemistryModMobEffects.REGISTRY.register(modEventBus);
 		RestartChemistryModMenus.REGISTRY.register(modEventBus);
 
 		RestartChemistryModFluids.REGISTRY.register(modEventBus);

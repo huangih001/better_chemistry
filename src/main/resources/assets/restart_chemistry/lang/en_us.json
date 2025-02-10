@@ -43,7 +43,9 @@
   "gui.restart_chemistry.shiyantai_3.label_fan_ying_tiao_jian": "反应条件",
   "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液",
   "advancements.sodium.title": " 爆炸进行时？",
+  "block.restart_chemistry.nafire_1": "黄焰-钠",
   "advancements.jiujingdeng_2.descr": "可以使用酒精灯点燃另一个酒精灯了（确信",
+  "effect.restart_chemistry.liusuan_2": "腐蚀 ",
   "item.restart_chemistry.shao_bei": "烧杯",
   "block.restart_chemistry.rongyandianjiechi": "熔盐电解池",
   "advancements.dianjiechi_2.descr": "很酥麻的感觉",
@@ -89,5 +91,5 @@
   "item.restart_chemistry.allyszqb": "补全的元素周期表",
   "item.restart_chemistry.shao_ping": "烧瓶",
   "item.restart_chemistry.lou_dou": "漏斗",
-  "death.attack.liusuan.player": "%1$s  在逃离 %2$s时，跳入了硫酸中"
+  "death.attack.liusuan.player": "%1$s  被腐蚀了"
 }
