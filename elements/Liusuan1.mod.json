@@ -2,10 +2,10 @@
   "_fv": 73,
   "_type": "fluid",
   "definition": {
-    "name": " 氢氧化钠溶液",
-    "bucketName": "氢氧化钠溶液",
-    "textureStill": "qingyanghuanajingtai",
-    "textureFlowing": "qingyanghuanadongtai",
+    "name": "硫酸",
+    "bucketName": " 硫酸溶液",
+    "textureStill": "liu_suan_",
+    "textureFlowing": "liusuan_1",
     "textureRenderOverlay": "",
     "hasFog": false,
     "fogStartDistance": {
@@ -16,10 +16,10 @@
     },
     "tintType": "No tint",
     "canMultiply": false,
-    "flowRate": 8,
+    "flowRate": 5,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "dripParticle": {
       "value": "EXPLOSION_NORMAL"
     },
@@ -45,14 +45,14 @@
     },
     "resistance": 100.0,
     "luminance": 0,
-    "lightOpacity": 3,
+    "lightOpacity": 1,
     "emissiveRendering": false,
     "tickRate": 0,
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
     "onEntityCollides": {
-      "name": "QingyanghuanaShengWuWanJiaPengZhuangGaiFangKuaiShi"
+      "name": "Liusuan1ShengWuWanJiaPengZhuangGaiFangKuaiShi"
     }
   }
 }

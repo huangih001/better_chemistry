@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "restart_chemistry:block/na_fire1",
-    "particle": "restart_chemistry:block/na_fire1"
+    "particle": "minecraft:block/fire_0"
   },
   "render_type": "cutout_mipped"
 }

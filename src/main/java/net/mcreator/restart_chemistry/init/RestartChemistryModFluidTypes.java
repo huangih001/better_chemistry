@@ -10,9 +10,11 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.fluids.FluidType;
 
 import net.mcreator.restart_chemistry.fluid.types.QingyanghuanaFluidType;
+import net.mcreator.restart_chemistry.fluid.types.Liusuan1FluidType;
 import net.mcreator.restart_chemistry.RestartChemistryMod;
 
 public class RestartChemistryModFluidTypes {
 	public static final DeferredRegister<FluidType> REGISTRY = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, RestartChemistryMod.MODID);
 	public static final DeferredHolder<FluidType, FluidType> QINGYANGHUANA_TYPE = REGISTRY.register("qingyanghuana", () -> new QingyanghuanaFluidType());
+	public static final DeferredHolder<FluidType, FluidType> LIUSUAN_1_TYPE = REGISTRY.register("liusuan_1", () -> new Liusuan1FluidType());
 }

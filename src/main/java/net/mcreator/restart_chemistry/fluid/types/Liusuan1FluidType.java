@@ -15,8 +15,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.restart_chemistry.init.RestartChemistryModFluidTypes;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public class QingyanghuanaFluidType extends FluidType {
-	public QingyanghuanaFluidType() {
+public class Liusuan1FluidType extends FluidType {
+	public Liusuan1FluidType() {
 		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
 				.sound(SoundActions.BUCKET_EMPTY, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bucket.empty"))).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
@@ -24,8 +24,8 @@ public class QingyanghuanaFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("restart_chemistry:block/qingyanghuanajingtai");
-			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("restart_chemistry:block/qingyanghuanadongtai");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("restart_chemistry:block/liu_suan_");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("restart_chemistry:block/liusuan_1");
 
 			@Override
 			public ResourceLocation getStillTexture() {
@@ -36,6 +36,6 @@ public class QingyanghuanaFluidType extends FluidType {
 			public ResourceLocation getFlowingTexture() {
 				return FLOWING_TEXTURE;
 			}
-		}, RestartChemistryModFluidTypes.QINGYANGHUANA_TYPE.get());
+		}, RestartChemistryModFluidTypes.LIUSUAN_1_TYPE.get());
 	}
 }

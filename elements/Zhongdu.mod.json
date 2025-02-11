@@ -2,14 +2,14 @@
   "_fv": 73,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "腐蚀 ",
-    "icon": "fu_shi_",
+    "effectName": "中毒",
+    "icon": "zhong_du_",
     "color": {
       "value": -1,
       "falpha": 0.0
     },
     "isInstant": false,
-    "mobEffectCategory": "HARMFUL",
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredByMilk": false,
@@ -17,7 +17,7 @@
     "isCuredbyHoney": false,
     "modifiers": [],
     "onStarted": {
-      "name": "Liusuan2DangYaoShuiXiaoGuoKaiShiYingYongShi"
+      "name": "ZhongduDangYaoShuiXiaoGuoKaiShiYingYongShi"
     }
   }
 }

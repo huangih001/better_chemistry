@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "na_fire1",
-    "particleTexture": "",
+    "particleTexture": "minecraft:fire_0",
     "tintType": "No tint",
     "isItemTinted": true,
     "hasTransparency": true,

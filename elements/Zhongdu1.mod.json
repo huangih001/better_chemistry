@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.11,
+    "scaling": "always",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s  中毒身亡",
+    "itemDeathMessage": "%1$s  中毒身亡",
+    "playerDeathMessage": "%1$s  中毒身亡"
+  }
+}

@@ -10,12 +10,12 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.restart_chemistry.init.RestartChemistryModMobEffects;
 
-public class Liusuan2DangYaoShuiXiaoGuoKaiShiYingYongShiProcedure {
+public class ZhongduDangYaoShuiXiaoGuoKaiShiYingYongShiProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		while (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RestartChemistryModMobEffects.LIUSUAN_2)) {
-			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("restart_chemistry:fushi")))), 4);
+		while (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RestartChemistryModMobEffects.ZHONGDU)) {
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("restart_chemistry:zhongdu_1")))), 4);
 		}
 	}
 }
