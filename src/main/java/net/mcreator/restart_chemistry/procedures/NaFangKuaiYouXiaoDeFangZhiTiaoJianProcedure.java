@@ -23,6 +23,7 @@ public class NaFangKuaiYouXiaoDeFangZhiTiaoJianProcedure {
 				|| (world.getFluidState(BlockPos.containing(x, y + 1, z)).createLegacyBlock()).getBlock() == Blocks.WATER || (world.getFluidState(BlockPos.containing(x, y - 1, z)).createLegacyBlock()).getBlock() == Blocks.WATER) {
 			RestartChemistryMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))) == RestartChemistryModBlocks.NA1.get().defaultBlockState()) {
+					TntProcedure.execute(world, x, y, z, 5);
 					if (world instanceof Level _level && !_level.isClientSide())
 						_level.explode(null, x, y, z, 6, Level.ExplosionInteraction.TNT);
 					world.setBlock(BlockPos.containing(x, y, z), RestartChemistryModBlocks.QINGYANGHUANA.get().defaultBlockState(), 3);

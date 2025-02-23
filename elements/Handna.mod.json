@@ -40,9 +40,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onDroppedByPlayer": {
-      "name": "HandnaDangWanJiaDiuQiWuPinShi"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

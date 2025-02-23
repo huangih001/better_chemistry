@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_nether",
+  "biomes": "#minecraft:is_overworld",
   "features": "restart_chemistry:liukuang",
   "step": "underground_ores"
 }

@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "腐蚀 ",
+    "effectName": "腐蚀",
     "icon": "fu_shi_",
     "color": {
       "value": -1,

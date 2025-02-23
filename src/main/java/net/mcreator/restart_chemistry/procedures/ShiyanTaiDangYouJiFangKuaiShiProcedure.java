@@ -18,14 +18,14 @@ public class ShiyanTaiDangYouJiFangKuaiShiProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == RestartChemistryModItems.HANDNA.get()
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY)
 						.getItem() == RestartChemistryModItems.JIU_JING_DENG.get()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.level() instanceof ServerLevel _serverLevel && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack stack = ((Slot) _slots.get(2)).getItem();
+				ItemStack stack = ((Slot) _slots.get(6)).getItem();
 				if (stack != null) {
 					stack.hurtAndBreak(1, _serverLevel, null, _stkprov -> {
 					});
@@ -43,21 +43,21 @@ public class ShiyanTaiDangYouJiFangKuaiShiProcedure {
 						}
 						return 0;
 					}
-				}.getAmount(4) + 1));
-				((Slot) _slots.get(4)).set(_setstack);
+				}.getAmount(7) + 1));
+				((Slot) _slots.get(7)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == RestartChemistryModItems.JIU_JING_DENG
 				.get()
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY)
 						.getItem() == RestartChemistryModItems.JIU_JING_DENG.get()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(2)).remove(1);
+				((Slot) _slots.get(6)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (world instanceof Level _level && !_level.isClientSide())

@@ -6,7 +6,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.restart_chemistry.init.RestartChemistryModMobEffects;
 
-public class Liusuan1ShengWuWanJiaPengZhuangGaiFangKuaiShiProcedure {
+public class LiusuanryShengWuWanJiaPengZhuangGaiFangKuaiShiProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;

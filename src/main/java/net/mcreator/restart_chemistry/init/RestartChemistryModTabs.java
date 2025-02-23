@@ -44,7 +44,6 @@ public class RestartChemistryModTabs {
 				tabData.accept(RestartChemistryModItems.JIQIPINGQITI.get());
 				tabData.accept(RestartChemistryModItems.JIIQIPINGYETI.get());
 				tabData.accept(RestartChemistryModItems.JIQIPINGZHEGUANGYETI.get());
-				tabData.accept(RestartChemistryModBlocks.NAFIRE_1.get().asItem());
-				tabData.accept(RestartChemistryModItems.LIUSUAN_1_BUCKET.get());
+				tabData.accept(RestartChemistryModItems.LIUSUANRY_BUCKET.get());
 			}).build());
 }

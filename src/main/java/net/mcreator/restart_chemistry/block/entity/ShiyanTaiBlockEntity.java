@@ -18,7 +18,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.world.inventory.Shiyantai3Menu;
+import net.mcreator.restart_chemistry.world.inventory.Shiyantai5Menu;
 import net.mcreator.restart_chemistry.init.RestartChemistryModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -28,7 +28,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class ShiyanTaiBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(13, ItemStack.EMPTY);
 	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public ShiyanTaiBlockEntity(BlockPos position, BlockState state) {
@@ -86,7 +86,7 @@ public class ShiyanTaiBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new Shiyantai3Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new Shiyantai5Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

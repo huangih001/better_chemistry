@@ -37,7 +37,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.world.inventory.Shiyantai3Menu;
+import net.mcreator.restart_chemistry.world.inventory.Shiyantai5Menu;
 import net.mcreator.restart_chemistry.procedures.ShiyanTaiDangYouJiFangKuaiShiProcedure;
 import net.mcreator.restart_chemistry.block.entity.ShiyanTaiBlockEntity;
 
@@ -116,7 +116,7 @@ public class ShiyanTaiBlock extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new Shiyantai3Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new Shiyantai5Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

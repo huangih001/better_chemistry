@@ -124,18 +124,21 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "#minecraft:is_nether"
+        "value": "#minecraft:is_overworld"
       }
     ],
     "blocksToReplace": [
       {
-        "value": "TAG:stone_ore_replaceables"
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.DIRT#0"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": -20,
-    "maxGenerateHeight": 0
+    "frequencyPerChunks": 9,
+    "frequencyOnChunk": 9,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 40
   }
 }

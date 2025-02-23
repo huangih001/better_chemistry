@@ -8,8 +8,8 @@ import net.minecraft.world.item.BucketItem;
 
 import net.mcreator.restart_chemistry.init.RestartChemistryModFluids;
 
-public class Liusuan1Item extends BucketItem {
-	public Liusuan1Item() {
-		super(RestartChemistryModFluids.LIUSUAN_1.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
+public class LiusuanryItem extends BucketItem {
+	public LiusuanryItem() {
+		super(RestartChemistryModFluids.LIUSUANRY.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
 	}
 }

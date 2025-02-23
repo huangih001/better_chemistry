@@ -1,5 +1,5 @@
 {
   "parent": "neoforge:item/bucket_drip",
   "loader": "neoforge:fluid_container",
-  "fluid": "restart_chemistry:liusuan_1"
+  "fluid": "restart_chemistry:liusuanry"
 }

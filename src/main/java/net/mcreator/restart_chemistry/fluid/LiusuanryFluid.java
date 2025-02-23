@@ -7,21 +7,28 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.ParticleOptions;
 
 import net.mcreator.restart_chemistry.init.RestartChemistryModItems;
 import net.mcreator.restart_chemistry.init.RestartChemistryModFluids;
 import net.mcreator.restart_chemistry.init.RestartChemistryModFluidTypes;
 import net.mcreator.restart_chemistry.init.RestartChemistryModBlocks;
 
-public abstract class Liusuan1Fluid extends BaseFlowingFluid {
-	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> RestartChemistryModFluidTypes.LIUSUAN_1_TYPE.get(), () -> RestartChemistryModFluids.LIUSUAN_1.get(),
-			() -> RestartChemistryModFluids.FLOWING_LIUSUAN_1.get()).explosionResistance(100f).bucket(() -> RestartChemistryModItems.LIUSUAN_1_BUCKET.get()).block(() -> (LiquidBlock) RestartChemistryModBlocks.LIUSUAN_1.get());
+public abstract class LiusuanryFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> RestartChemistryModFluidTypes.LIUSUANRY_TYPE.get(), () -> RestartChemistryModFluids.LIUSUANRY.get(),
+			() -> RestartChemistryModFluids.FLOWING_LIUSUANRY.get()).explosionResistance(100f).bucket(() -> RestartChemistryModItems.LIUSUANRY_BUCKET.get()).block(() -> (LiquidBlock) RestartChemistryModBlocks.LIUSUANRY.get());
 
-	private Liusuan1Fluid() {
+	private LiusuanryFluid() {
 		super(PROPERTIES);
 	}
 
-	public static class Source extends Liusuan1Fluid {
+	@Override
+	public ParticleOptions getDripParticle() {
+		return ParticleTypes.EXPLOSION;
+	}
+
+	public static class Source extends LiusuanryFluid {
 		public int getAmount(FluidState state) {
 			return 8;
 		}
@@ -31,7 +38,7 @@ public abstract class Liusuan1Fluid extends BaseFlowingFluid {
 		}
 	}
 
-	public static class Flowing extends Liusuan1Fluid {
+	public static class Flowing extends LiusuanryFluid {
 		protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> builder) {
 			super.createFluidStateDefinition(builder);
 			builder.add(LEVEL);

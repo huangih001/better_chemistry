@@ -16,14 +16,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.restart_chemistry.block.entity.ShiyanTaiBlockEntity;
-import net.mcreator.restart_chemistry.block.entity.Nafire1BlockEntity;
 import net.mcreator.restart_chemistry.RestartChemistryMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class RestartChemistryModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, RestartChemistryMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SHIYAN_TAI = register("shiyan_tai", RestartChemistryModBlocks.SHIYAN_TAI, ShiyanTaiBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> NAFIRE_1 = register("nafire_1", RestartChemistryModBlocks.NAFIRE_1, Nafire1BlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -34,6 +32,5 @@ public class RestartChemistryModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SHIYAN_TAI.get(), (blockEntity, side) -> ((ShiyanTaiBlockEntity) blockEntity).getItemHandler());
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NAFIRE_1.get(), (blockEntity, side) -> ((Nafire1BlockEntity) blockEntity).getItemHandler());
 	}
 }

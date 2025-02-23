@@ -22,7 +22,7 @@ import net.mcreator.restart_chemistry.item.SaltItem;
 import net.mcreator.restart_chemistry.item.QingyanghuanaItem;
 import net.mcreator.restart_chemistry.item.LouDouItem;
 import net.mcreator.restart_chemistry.item.LogoItem;
-import net.mcreator.restart_chemistry.item.Liusuan1Item;
+import net.mcreator.restart_chemistry.item.LiusuanryItem;
 import net.mcreator.restart_chemistry.item.LiudanzhiItem;
 import net.mcreator.restart_chemistry.item.JiuJingDengItem;
 import net.mcreator.restart_chemistry.item.JiqipingzheguangyetiItem;
@@ -64,8 +64,7 @@ public class RestartChemistryModItems {
 	public static final DeferredItem<Item> JIQIPINGQITI = REGISTRY.register("jiqipingqiti", JiqipingqitiItem::new);
 	public static final DeferredItem<Item> JIIQIPINGYETI = REGISTRY.register("jiiqipingyeti", JiiqipingyetiItem::new);
 	public static final DeferredItem<Item> JIQIPINGZHEGUANGYETI = REGISTRY.register("jiqipingzheguangyeti", JiqipingzheguangyetiItem::new);
-	public static final DeferredItem<Item> NAFIRE_1 = block(RestartChemistryModBlocks.NAFIRE_1);
-	public static final DeferredItem<Item> LIUSUAN_1_BUCKET = REGISTRY.register("liusuan_1_bucket", Liusuan1Item::new);
+	public static final DeferredItem<Item> LIUSUANRY_BUCKET = REGISTRY.register("liusuanry_bucket", LiusuanryItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

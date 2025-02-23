@@ -7,10 +7,8 @@ import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.restart_chemistry.init.RestartChemistryModBlocks;
 
@@ -35,32 +33,17 @@ public class FangkuaipandingProcedure {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
 				}
-				{
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
-					world.destroyBlock(_pos, false);
-				}
 			}
 		} else if (blockstate.getBlock() == RestartChemistryModBlocks.RONGYANDIANJIECHI.get()) {
-			if (PlaceconflictProcedure.execute(world, x, y, z, 1, 1, 1, -1, 0, -1, entity.getYRot())) {
+			if (PlaceconflictProcedure.execute(world, x, y, z, -1, 1, 1, 1, 0, -1, entity.getYRot())) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
-				}
-				{
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
-					world.destroyBlock(_pos, false);
 				}
 			}
 		} else if (blockstate.getBlock() == RestartChemistryModBlocks.DIANJIE_CHI.get()) {
 			if (PlaceconflictProcedure.execute(world, x, y, z, 1, 0, 0, 0, 0, 0, entity.getYRot())) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
-				}
-				{
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
-					world.destroyBlock(_pos, false);
 				}
 			}
 		}

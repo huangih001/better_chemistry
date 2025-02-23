@@ -2,10 +2,10 @@
   "_fv": 73,
   "_type": "fluid",
   "definition": {
-    "name": "硫酸",
-    "bucketName": " 硫酸溶液",
-    "textureStill": "liu_suan_",
-    "textureFlowing": "liusuan_1",
+    "name": "硫酸溶液",
+    "bucketName": "硫酸溶液",
+    "textureStill": "liu-jing",
+    "textureFlowing": "liu-dong",
     "textureRenderOverlay": "",
     "hasFog": false,
     "fogStartDistance": {
@@ -19,7 +19,7 @@
     "flowRate": 5,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "dripParticle": {
       "value": "EXPLOSION_NORMAL"
     },
@@ -52,7 +52,7 @@
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
     "onEntityCollides": {
-      "name": "Liusuan1ShengWuWanJiaPengZhuangGaiFangKuaiShi"
+      "name": "LiusuanryShengWuWanJiaPengZhuangGaiFangKuaiShi"
     }
   }
 }

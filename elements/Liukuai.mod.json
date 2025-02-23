@@ -129,13 +129,13 @@
     ],
     "blocksToReplace": [
       {
-        "value": "TAG:stone_ore_replaceables"
+        "value": "TAG:minecraft:liu"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 4,
+    "frequencyPerChunks": 8,
     "frequencyOnChunk": 6,
-    "minGenerateHeight": -20,
-    "maxGenerateHeight": 0
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 40
   }
 }

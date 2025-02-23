@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:magma_block",
+    "minecraft:blackstone",
+    "minecraft:netherrack",
+    "minecraft:nether_wart_block",
+    "minecraft:soul_soil",
+    "minecraft:basalt",
+    "minecraft:soul_sand"
+  ]
+}

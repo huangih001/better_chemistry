@@ -8,10 +8,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.restart_chemistry.procedures.HandnaDangWanJiaDiuQiWuPinShiProcedure;
 
 import java.util.List;
 
@@ -27,11 +24,5 @@ public class HandnaItem extends Item {
 		list.add(Component.translatable("item.restart_chemistry.handna.description_0"));
 		list.add(Component.translatable("item.restart_chemistry.handna.description_1"));
 		list.add(Component.translatable("item.restart_chemistry.handna.description_2"));
-	}
-
-	@Override
-	public boolean onDroppedByPlayer(ItemStack itemstack, Player entity) {
-		HandnaDangWanJiaDiuQiWuPinShiProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		return true;
 	}
 }
