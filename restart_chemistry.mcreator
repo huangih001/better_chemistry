@@ -137,6 +137,7 @@
           "src/main/java/net/mcreator/restart_chemistry/block/DianjieChiBlock.java",
           "src/main/resources/data/restart_chemistry/loot_table/blocks/dianjie_chi.json",
           "src/main/resources/assets/restart_chemistry/models/block/dianjie_chi.json",
+          "src/main/java/net/mcreator/restart_chemistry/block/entity/DianjieChiBlockEntity.java",
           "src/main/resources/assets/restart_chemistry/blockstates/dianjie_chi.json"
         ]
       }
@@ -1250,6 +1251,223 @@
           "src/main/resources/assets/restart_chemistry/models/item/liusuanry_bucket.json"
         ]
       }
+    },
+    {
+      "name": "LiusuanryDangPiLinFangKuaiGengXinShi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liusuanry_dang_pi_lin_fang_kuai_geng_xin_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/LiusuanryDangPiLinFangKuaiGengXinShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xiaosuanjing",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xiaosuanjing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/restart_chemistry/blockstates/xiaosuanjing.json",
+          "src/main/resources/assets/restart_chemistry/models/block/xiaosuanjing.json",
+          "src/main/resources/assets/restart_chemistry/models/item/xiaosuanjing_bucket.json",
+          "src/main/java/net/mcreator/restart_chemistry/block/XiaosuanjingBlock.java",
+          "src/main/java/net/mcreator/restart_chemistry/fluid/types/XiaosuanjingFluidType.java",
+          "src/main/java/net/mcreator/restart_chemistry/fluid/XiaosuanjingFluid.java",
+          "src/main/java/net/mcreator/restart_chemistry/item/XiaosuanjingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Fudadiandui",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fudadiandui",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/restart_chemistry/models/item/fudadiandui.json",
+          "src/main/java/net/mcreator/restart_chemistry/item/FudadianduiItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Dianjiechi3",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dianjiechi_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/world/inventory/Dianjiechi3Menu.java",
+          "src/main/java/net/mcreator/restart_chemistry/network/Dianjiechi3ButtonMessage.java",
+          "src/main/java/net/mcreator/restart_chemistry/client/gui/Dianjiechi3Screen.java"
+        ]
+      }
+    },
+    {
+      "name": "DianjieChiDangYouJiFangKuaiShi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dianjie_chi_dang_you_ji_fang_kuai_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/procedures/DianjieChiDangYouJiFangKuaiShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jingtiejia",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jingtiejia",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/restart_chemistry/models/item/jingtiejia_chestplate.json",
+          "src/main/resources/assets/restart_chemistry/models/item/jingtiejia_leggings.json",
+          "src/main/resources/assets/restart_chemistry/models/item/jingtiejia_boots.json",
+          "src/main/resources/assets/restart_chemistry/models/item/jingtiejia_helmet.json",
+          "src/main/java/net/mcreator/restart_chemistry/item/JingtiejiaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Dujinggao",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dujinggao",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/restart_chemistry/models/item/dujinggao.json",
+          "src/main/java/net/mcreator/restart_chemistry/item/DujinggaoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Dujingjian",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dujingjian",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/item/DujingjianItem.java",
+          "src/main/resources/assets/restart_chemistry/models/item/dujingjian.json"
+        ]
+      }
+    },
+    {
+      "name": "Dujngchan",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dujngchan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/item/DujngchanItem.java",
+          "src/main/resources/assets/restart_chemistry/models/item/dujngchan.json"
+        ]
+      }
+    },
+    {
+      "name": "Dujingfu",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dujingfu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/item/DujingfuItem.java",
+          "src/main/resources/assets/restart_chemistry/models/item/dujingfu.json"
+        ]
+      }
+    },
+    {
+      "name": "Dujingchu",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dujingchu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/item/DujingchuItem.java",
+          "src/main/resources/assets/restart_chemistry/models/item/dujingchu.json"
+        ]
+      }
+    },
+    {
+      "name": "Lvhuana",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvhuana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/restart_chemistry/models/item/lvhuana_bucket.json",
+          "src/main/java/net/mcreator/restart_chemistry/fluid/types/LvhuanaFluidType.java",
+          "src/main/java/net/mcreator/restart_chemistry/item/LvhuanaItem.java",
+          "src/main/resources/assets/restart_chemistry/blockstates/lvhuana.json",
+          "src/main/resources/assets/restart_chemistry/models/block/lvhuana.json",
+          "src/main/java/net/mcreator/restart_chemistry/fluid/LvhuanaFluid.java",
+          "src/main/java/net/mcreator/restart_chemistry/block/LvhuanaBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Lvqi",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvqi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/item/LvqiItem.java",
+          "src/main/resources/assets/restart_chemistry/models/item/lvqi.json"
+        ]
+      }
+    },
+    {
+      "name": "Fudadiandui1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fudadiandui_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/restart_chemistry/recipe/fudadiandui_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1264,8 +1482,11 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:JiuJingDeng"
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Jingtiejia.body"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Dujinggao"
     ],
     "BLOCKS:minecraft:liukuang": [],
     "BLOCKS:minecraft:liu": [
@@ -1277,50 +1498,83 @@
       "Blocks.BASALT",
       "Blocks.SOUL_SAND"
     ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:Rongyandianjiechi",
-      "~CUSTOM:DianjieChi",
-      "~CUSTOM:ShiyanTai"
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:Jingtiejia.legs"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:Dujingchu"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Rongyandianjiechi",
       "~CUSTOM:DianjieChi"
     ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:Sodiumoxideblock",
-      "~CUSTOM:Na"
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Lvhuana",
+      "~CUSTOM:Xiaosuanjing",
+      "~CUSTOM:Liusuanry",
+      "~CUSTOM:Qingyanghuana"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:ShiyanTai"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:Liusuanry",
-      "~CUSTOM:Qingyanghuana"
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:Sodiumoxideblock",
+      "~CUSTOM:Na"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:Dujngchan"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:Dujingfu"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Fudadiandui",
+      "~CUSTOM:JiuJingDeng"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Rongyandianjiechi",
+      "~CUSTOM:DianjieChi",
+      "~CUSTOM:ShiyanTai"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Jingtiejia.helmet"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Dujingjian"
     ],
     "BLOCKS:mod:tag3": [
       "CUSTOM:ShiyanTai",
       "CUSTOM:DianjieChi",
       "CUSTOM:Rongyandianjiechi"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Jingtiejia.boots"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.restart_chemistry.jiao_tou_di_guan.description_0": "胶头滴管——是用于吸取或滴加少量液体试剂的一种仪器",
+      "item.restart_chemistry.lvhuana_bucket": "氯化钠溶液",
       "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
       "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "advancements.daoguan_2.title": " 玻璃导管",
+      "block.restart_chemistry.lvhuana": "氯化钠溶液",
       "death.attack.salt_2.item": "%1$s   死于吃盐过量导致的肾衰竭",
+      "item.restart_chemistry.dujingfu": "镀金铁斧",
       "item.restart_chemistry.liusuanry_bucket": "硫酸溶液",
       "block.restart_chemistry.na1": "钠块",
       "death.attack.salt_2": "%1$s   死于吃盐过量导致的肾衰竭",
+      "fluid.restart_chemistry.xiaosuanjing": "硝酸金溶液",
       "death.attack.zhongdu_1.player": "%1$s  中毒身亡",
       "item.restart_chemistry.shi_guan.description_0": "试管—化学实验室常用的仪器 ",
       "item.restart_chemistry.shi_guan.description_1": "经常用作于少量试剂的反应容器",
+      "item.restart_chemistry.jingtiejia_helmet": "镀金铁头盔",
       "item.better_chemistry.strangezd": "奇怪的终端",
       "item.restart_chemistry.salt.description_0": "§0 氯化钠-钠的衍生物，经常出现在海水中",
       "death.attack.zhongdu_1": "%1$s  中毒身亡",
       "advancements.rongyandianjiechi_2.descr": "十万伏特？！",
+      "item.restart_chemistry.lvqi": "氯气",
       "block.better_chemistry.shiyan_tai": "化学实验台",
       "fluid.restart_chemistry.liusuanry": "硫酸溶液",
       "advancements.shaobei_2.title": "万   恶   之   源",
@@ -1335,7 +1589,10 @@
       "item.better_chemistry.allyszqb": "补全的元素周期表",
       "block.restart_chemistry.liukuai": "硫块",
       "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液",
+      "fluid.restart_chemistry.lvhuana": "氯化钠溶液",
+      "block.restart_chemistry.xiaosuanjing": "硝酸金溶液",
       "item.restart_chemistry.shao_bei": "烧杯",
+      "item.restart_chemistry.dujngchan": "镀金铁铲",
       "item.restart_chemistry.creativeyszqb": "创造模式元素周期表",
       "death.attack.salt_2.player": "%1$s   死于吃盐过量导致的肾衰竭",
       "advancements.jiujingdeng_2.title": "c4已安放（？）",
@@ -1346,6 +1603,7 @@
       "advancements.shaobei_2.descr": "煮泡面的最佳容器.jpg",
       "item.better_chemistry.creativeyszqb": "创造模式元素周期表",
       "advancements.start.title": "一切的开始",
+      "item.restart_chemistry.dujinggao": "镀金铁稿",
       "advancements.rongyandianjiechi_2.title": "电解池pro！",
       "item.restart_chemistry.jiu_jing_deng.description_1": "不要试图用酒精灯点燃另一个酒精灯",
       "item.restart_chemistry.allyszqb.description_0": "已经探索完世界科技并记录着所有实验记录的终端",
@@ -1353,10 +1611,14 @@
       "item.restart_chemistry.dao_guan.description_0": "玻璃导管-连接反应装置的好东西",
       "item.restart_chemistry.dao_guan.description_1": "很脆弱，对待它应该像对待初恋一样小心",
       "item.restart_chemistry.salt": "氯化钠",
+      "item.restart_chemistry.xiaosuanjing_bucket": "硝酸金溶液",
       "block.restart_chemistry.shiyan_tai": "化学实验台",
       "item.restart_chemistry.shao_ping": "烧瓶",
       "item.restart_chemistry.lou_dou": "漏斗",
+      "gui.restart_chemistry.dianjiechi_3.label_dian_jie_chi": "电解池",
       "death.attack.fushi": "%1$s  被腐蚀了",
+      "item.restart_chemistry.jingtiejia_leggings": "镀金铁护腿",
+      "item.restart_chemistry.dujingchu": "镀金铁锄",
       "gui.restart_chemistry.shiyantai_3.button_fan_ying": "反应",
       "item.restart_chemistry.logo": "Logo",
       "gui.restart_chemistry.shiyantai_5.button_kai_shi_shi_yan": "开始实验",
@@ -1370,10 +1632,11 @@
       "block.restart_chemistry.liukuang": "硫磺矿",
       "block.restart_chemistry.na1.description_1": "是碱金属元素的代表，质地柔软",
       "block.restart_chemistry.na1.description_0": "钠在周期表中位于第3周期、第ⅠA族 ",
+      "item.restart_chemistry.jingtiejia_chestplate": "镀金铁胸甲",
       "block.restart_chemistry.na1.description_2": "可以试试在钠块旁边倒一桶水，会有奇妙的反应",
       "item.restart_chemistry.handna.description_2": "或许遇水会发生些反应...........",
       "item.better_chemistry.logo": "Logo",
-      "item.restart_chemistry.jiqipingqiti": "集气瓶-气体",
+      "item.restart_chemistry.jiqipingqiti": "集气瓶",
       "advancements.sodium.descr": " 这天钠块与水一起喝醉了.......",
       "gui.restart_chemistry.shiyantai_5.label_hua_xue_shi_yan_tai": "化学试验台",
       "gui.restart_chemistry.shiyantai_3.label_fan_ying_tiao_jian": "反应条件",
@@ -1403,28 +1666,38 @@
       "item.restart_chemistry.shao_bei.description_1": "或许真的可以在里面煮泡面.jpg",
       "item.restart_chemistry.shao_bei.description_0": "烧杯—加热、溶解、混合、煮沸、熔融、蒸发浓缩等",
       "death.attack.zhongdu_1.item": "%1$s  中毒身亡",
+      "item.restart_chemistry.jingtiejia_boots": "镀金铁靴子",
+      "gui.restart_chemistry.dianjiechi_3.button_kai_shi_fan_ying": "开始反应",
+      "item.restart_chemistry.dujingjian": "镀金铁剑",
       "item.restart_chemistry.jiqipingzheguangyeti": "遮光液体",
       "item.restart_chemistry.strangezd": "奇怪的终端",
       "gui.restart_chemistry.shiyantai_5.huaxueshiyantai": "化学实验台",
       "item.restart_chemistry.allyszqb": "补全的元素周期表",
-      "death.attack.fushi.player": "%1$s  被腐蚀了"
+      "death.attack.fushi.player": "%1$s  被腐蚀了",
+      "item.restart_chemistry.fudadiandui": "伏打电堆"
     },
     "zh_cn": {
       "item.restart_chemistry.jiao_tou_di_guan.description_0": "胶头滴管——是用于吸取或滴加少量液体试剂的一种仪器",
+      "item.restart_chemistry.lvhuana_bucket": " 氯化钠溶液",
       "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
       "item.restart_chemistry.jiu_jing_deng": "酒精灯",
+      "block.restart_chemistry.lvhuana": "氯化钠溶液",
       "advancements.daoguan_2.title": " 玻璃导管",
+      "item.restart_chemistry.dujingfu": "镀金铁斧",
       "death.attack.salt_2.item": "%1$s  被咸死了",
       "item.restart_chemistry.liusuanry_bucket": "硫酸溶液",
       "block.restart_chemistry.na1": "钠块",
       "death.attack.salt_2": "%1$s  死于吃盐过量导致的肾衰竭",
+      "fluid.restart_chemistry.xiaosuanjing": "硝酸金溶液",
       "death.attack.zhongdu_1.player": "%1$s  中毒身亡",
       "item.restart_chemistry.shi_guan.description_0": "试管—化学实验室常用的仪器 ",
       "item.restart_chemistry.shi_guan.description_1": "经常用作于少量试剂的反应容器",
+      "item.restart_chemistry.jingtiejia_helmet": "镀金铁头盔",
       "item.better_chemistry.strangezd": "奇怪的终端",
       "item.restart_chemistry.salt.description_0": "§0 氯化钠-钠的衍生物，经常出现在海水中",
       "death.attack.zhongdu_1": "%1$s  中毒身亡",
       "advancements.rongyandianjiechi_2.descr": "十万伏特？！",
+      "item.restart_chemistry.lvqi": "氯气",
       "block.better_chemistry.shiyan_tai": "化学实验台",
       "fluid.restart_chemistry.liusuanry": "硫酸溶液",
       "advancements.shaobei_2.title": "万   恶   之   源",
@@ -1439,9 +1712,12 @@
       "item.better_chemistry.allyszqb": "补全的元素周期表",
       "block.restart_chemistry.liukuai": "硫块",
       "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液瓶",
+      "fluid.restart_chemistry.lvhuana": "氯化钠溶液",
+      "block.restart_chemistry.xiaosuanjing": "硝酸金溶液",
       "item.restart_chemistry.shao_bei": "烧杯",
+      "item.restart_chemistry.dujngchan": "镀金铁铲",
       "item.restart_chemistry.creativeyszqb": "创造模式元素周期表",
-      "death.attack.salt_2.player": "%1$s died whilst trying to escape %2$s",
+      "death.attack.salt_2.player": "%1$s 被人用盐喷死了",
       "advancements.jiujingdeng_2.title": "酒精灯",
       "advancements.shiguan_2.title": "试管",
       "item.restart_chemistry.jiao_tou_di_guan": "胶头滴管",
@@ -1450,6 +1726,7 @@
       "advancements.shaobei_2.descr": "煮泡面的最佳容器.jpg",
       "item.better_chemistry.creativeyszqb": "创造模式元素周期表",
       "advancements.start.title": "一切的开始",
+      "item.restart_chemistry.dujinggao": "镀金铁稿",
       "advancements.rongyandianjiechi_2.title": "电解池pro！",
       "item.restart_chemistry.jiu_jing_deng.description_1": "不要试图用酒精灯点燃另一个酒精灯",
       "item.restart_chemistry.allyszqb.description_0": "已经探索完世界科技并记录着所有实验记录的终端",
@@ -1457,10 +1734,14 @@
       "item.restart_chemistry.dao_guan.description_0": "玻璃导管-连接反应装置的好东西",
       "item.restart_chemistry.dao_guan.description_1": "很脆弱，对待它应该像对待初恋一样小心",
       "item.restart_chemistry.salt": "氯化钠",
+      "item.restart_chemistry.xiaosuanjing_bucket": "硝酸金溶液",
       "block.restart_chemistry.shiyan_tai": "化学实验台",
       "item.restart_chemistry.lou_dou": "漏斗",
       "item.restart_chemistry.shao_ping": "烧瓶",
+      "gui.restart_chemistry.dianjiechi_3.label_dian_jie_chi": "电解池",
       "death.attack.fushi": "%1$s  被腐蚀了",
+      "item.restart_chemistry.jingtiejia_leggings": "镀金铁护腿",
+      "item.restart_chemistry.dujingchu": "镀金铁锄",
       "block.restart_chemistry.na": "钠块",
       "gui.restart_chemistry.shiyantai_3.button_fan_ying": "反应",
       "item.restart_chemistry.logo": "Logo",
@@ -1475,6 +1756,7 @@
       "block.restart_chemistry.liukuang": "硫磺矿",
       "block.restart_chemistry.na1.description_1": "是碱金属元素的代表，质地柔软",
       "block.restart_chemistry.na1.description_0": "钠在周期表中位于第3周期、第ⅠA族 ",
+      "item.restart_chemistry.jingtiejia_chestplate": "镀金铁胸甲",
       "block.restart_chemistry.na1.description_2": "可以试试在钠块旁边倒一桶水，会有奇妙的反应",
       "item.restart_chemistry.handna.description_2": "或许遇水会发生些反应...........",
       "item.better_chemistry.logo": "Logo",
@@ -1485,7 +1767,7 @@
       "item.restart_chemistry.yszqb": "元素周期表",
       "advancements.sodium.title": "Sodium",
       "advancements.jiujingdeng_2.descr": "可以使用酒精灯点燃另一个酒精灯了（？）",
-      "effect.restart_chemistry.liusuan_2": " 2 ",
+      "effect.restart_chemistry.liusuan_2": "腐蚀",
       "block.restart_chemistry.rongyandianjiechi": "熔盐电解池",
       "effect.restart_chemistry.zhongdu": "中毒",
       "advancements.dianjiechi_2.descr": "很酥麻的感觉",
@@ -1508,11 +1790,15 @@
       "item.restart_chemistry.shao_bei.description_1": "或许真的可以在里面煮泡面.jpg",
       "item.restart_chemistry.shao_bei.description_0": "烧杯—加热、溶解、混合、煮沸、熔融、蒸发浓缩等",
       "death.attack.zhongdu_1.item": "%1$s  中毒身亡",
+      "item.restart_chemistry.jingtiejia_boots": "镀金铁靴子",
+      "gui.restart_chemistry.dianjiechi_3.button_kai_shi_fan_ying": "开始反应",
+      "item.restart_chemistry.dujingjian": "镀金剑",
       "item.restart_chemistry.jiqipingzheguangyeti": "遮光液体",
       "item.restart_chemistry.strangezd": "奇怪的终端",
       "gui.restart_chemistry.shiyantai_5.huaxueshiyantai": "化学实验台",
       "item.restart_chemistry.allyszqb": "补全的元素周期表",
-      "death.attack.fushi.player": "%1$s  被腐蚀了"
+      "death.attack.fushi.player": "%1$s  被腐蚀了",
+      "item.restart_chemistry.fudadiandui": "伏打电堆"
     }
   },
   "foldersRoot": {

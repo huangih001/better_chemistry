@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "restart_chemistry:lvhuana",
+    "restart_chemistry:xiaosuanjing",
     "restart_chemistry:liusuanry",
     "restart_chemistry:qingyanghuana"
   ]

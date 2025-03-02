@@ -1,0 +1,7 @@
+{
+  "parent": "restart_chemistry:custom/fu_da_dian_dui_",
+  "textures": {
+    "0": "restart_chemistry:block/fu_da_dian_dui_",
+    "particle": "restart_chemistry:item/fu_da_dian_dui_"
+  }
+}

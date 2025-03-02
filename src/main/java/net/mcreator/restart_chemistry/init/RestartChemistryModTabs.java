@@ -6,14 +6,19 @@ package net.mcreator.restart_chemistry.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.restart_chemistry.RestartChemistryMod;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class RestartChemistryModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RestartChemistryMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BETTER_CHEMISTRY = REGISTRY.register("better_chemistry",
@@ -45,5 +50,29 @@ public class RestartChemistryModTabs {
 				tabData.accept(RestartChemistryModItems.JIIQIPINGYETI.get());
 				tabData.accept(RestartChemistryModItems.JIQIPINGZHEGUANGYETI.get());
 				tabData.accept(RestartChemistryModItems.LIUSUANRY_BUCKET.get());
+				tabData.accept(RestartChemistryModItems.XIAOSUANJING_BUCKET.get());
+				tabData.accept(RestartChemistryModItems.FUDADIANDUI.get());
+				tabData.accept(RestartChemistryModItems.JINGTIEJIA_HELMET.get());
+				tabData.accept(RestartChemistryModItems.JINGTIEJIA_CHESTPLATE.get());
+				tabData.accept(RestartChemistryModItems.JINGTIEJIA_LEGGINGS.get());
+				tabData.accept(RestartChemistryModItems.JINGTIEJIA_BOOTS.get());
+				tabData.accept(RestartChemistryModItems.LVHUANA_BUCKET.get());
+				tabData.accept(RestartChemistryModItems.LVQI.get());
 			}).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(RestartChemistryModItems.JINGTIEJIA_HELMET.get());
+			tabData.accept(RestartChemistryModItems.JINGTIEJIA_CHESTPLATE.get());
+			tabData.accept(RestartChemistryModItems.JINGTIEJIA_LEGGINGS.get());
+			tabData.accept(RestartChemistryModItems.JINGTIEJIA_BOOTS.get());
+			tabData.accept(RestartChemistryModItems.DUJINGJIAN.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(RestartChemistryModItems.DUJINGGAO.get());
+			tabData.accept(RestartChemistryModItems.DUJNGCHAN.get());
+			tabData.accept(RestartChemistryModItems.DUJINGFU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGCHU.get());
+		}
+	}
 }

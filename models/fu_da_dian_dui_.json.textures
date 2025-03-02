@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fu_da_dian_dui_"
+      },
+      "name": "default"
+    }
+  }
+}

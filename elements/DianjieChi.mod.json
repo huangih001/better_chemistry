@@ -197,10 +197,11 @@
     "unbreakable": false,
     "vanillaToolTier": "IRON",
     "isBonemealable": false,
-    "hasInventory": false,
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "hasInventory": true,
+    "guiBoundTo": "Dianjiechi3",
+    "openGUIOnRightClick": true,
+    "inventorySize": 7,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -213,6 +214,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "DianjieChiDangYouJiFangKuaiShi"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

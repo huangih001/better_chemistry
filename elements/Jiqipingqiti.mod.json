@@ -7,7 +7,7 @@
     "customModelName": "qi_ti_:default",
     "customProperties": {},
     "states": [],
-    "name": "集气瓶-气体",
+    "name": "集气瓶",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -53,6 +53,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

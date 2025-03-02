@@ -14,12 +14,15 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.restart_chemistry.item.YszqbItem;
 import net.mcreator.restart_chemistry.item.YanghuanaItem;
+import net.mcreator.restart_chemistry.item.XiaosuanjingItem;
 import net.mcreator.restart_chemistry.item.StrangezdItem;
 import net.mcreator.restart_chemistry.item.ShiGuanItem;
 import net.mcreator.restart_chemistry.item.ShaoPingItem;
 import net.mcreator.restart_chemistry.item.ShaoBeiItem;
 import net.mcreator.restart_chemistry.item.SaltItem;
 import net.mcreator.restart_chemistry.item.QingyanghuanaItem;
+import net.mcreator.restart_chemistry.item.LvqiItem;
+import net.mcreator.restart_chemistry.item.LvhuanaItem;
 import net.mcreator.restart_chemistry.item.LouDouItem;
 import net.mcreator.restart_chemistry.item.LogoItem;
 import net.mcreator.restart_chemistry.item.LiusuanryItem;
@@ -27,9 +30,16 @@ import net.mcreator.restart_chemistry.item.LiudanzhiItem;
 import net.mcreator.restart_chemistry.item.JiuJingDengItem;
 import net.mcreator.restart_chemistry.item.JiqipingzheguangyetiItem;
 import net.mcreator.restart_chemistry.item.JiqipingqitiItem;
+import net.mcreator.restart_chemistry.item.JingtiejiaItem;
 import net.mcreator.restart_chemistry.item.JiiqipingyetiItem;
 import net.mcreator.restart_chemistry.item.JiaoTouDiGuanItem;
 import net.mcreator.restart_chemistry.item.HandnaItem;
+import net.mcreator.restart_chemistry.item.FudadianduiItem;
+import net.mcreator.restart_chemistry.item.DujngchanItem;
+import net.mcreator.restart_chemistry.item.DujingjianItem;
+import net.mcreator.restart_chemistry.item.DujinggaoItem;
+import net.mcreator.restart_chemistry.item.DujingfuItem;
+import net.mcreator.restart_chemistry.item.DujingchuItem;
 import net.mcreator.restart_chemistry.item.DaoGuanItem;
 import net.mcreator.restart_chemistry.item.CreativeyszqbItem;
 import net.mcreator.restart_chemistry.item.AllyszqbItem;
@@ -65,6 +75,19 @@ public class RestartChemistryModItems {
 	public static final DeferredItem<Item> JIIQIPINGYETI = REGISTRY.register("jiiqipingyeti", JiiqipingyetiItem::new);
 	public static final DeferredItem<Item> JIQIPINGZHEGUANGYETI = REGISTRY.register("jiqipingzheguangyeti", JiqipingzheguangyetiItem::new);
 	public static final DeferredItem<Item> LIUSUANRY_BUCKET = REGISTRY.register("liusuanry_bucket", LiusuanryItem::new);
+	public static final DeferredItem<Item> XIAOSUANJING_BUCKET = REGISTRY.register("xiaosuanjing_bucket", XiaosuanjingItem::new);
+	public static final DeferredItem<Item> FUDADIANDUI = REGISTRY.register("fudadiandui", FudadianduiItem::new);
+	public static final DeferredItem<Item> JINGTIEJIA_HELMET = REGISTRY.register("jingtiejia_helmet", JingtiejiaItem.Helmet::new);
+	public static final DeferredItem<Item> JINGTIEJIA_CHESTPLATE = REGISTRY.register("jingtiejia_chestplate", JingtiejiaItem.Chestplate::new);
+	public static final DeferredItem<Item> JINGTIEJIA_LEGGINGS = REGISTRY.register("jingtiejia_leggings", JingtiejiaItem.Leggings::new);
+	public static final DeferredItem<Item> JINGTIEJIA_BOOTS = REGISTRY.register("jingtiejia_boots", JingtiejiaItem.Boots::new);
+	public static final DeferredItem<Item> DUJINGGAO = REGISTRY.register("dujinggao", DujinggaoItem::new);
+	public static final DeferredItem<Item> DUJINGJIAN = REGISTRY.register("dujingjian", DujingjianItem::new);
+	public static final DeferredItem<Item> DUJNGCHAN = REGISTRY.register("dujngchan", DujngchanItem::new);
+	public static final DeferredItem<Item> DUJINGFU = REGISTRY.register("dujingfu", DujingfuItem::new);
+	public static final DeferredItem<Item> DUJINGCHU = REGISTRY.register("dujingchu", DujingchuItem::new);
+	public static final DeferredItem<Item> LVHUANA_BUCKET = REGISTRY.register("lvhuana_bucket", LvhuanaItem::new);
+	public static final DeferredItem<Item> LVQI = REGISTRY.register("lvqi", LvqiItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
