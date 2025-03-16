@@ -28,7 +28,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Dianjiechi3Menu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class Shiyantai6Menu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -41,11 +41,11 @@ public class Dianjiechi3Menu extends AbstractContainerMenu implements Supplier<M
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public Dianjiechi3Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(RestartChemistryModMenus.DIANJIECHI_3.get(), id);
+	public Shiyantai6Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(RestartChemistryModMenus.SHIYANTAI_6.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(7);
+		this.internal = new ItemStackHandler(13);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -82,50 +82,95 @@ public class Dianjiechi3Menu extends AbstractContainerMenu implements Supplier<M
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, -3, 36) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 49, 9) {
 			private final int slot = 0;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 69, -2) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 71, 9) {
 			private final int slot = 1;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 141, 35) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 48, 30) {
 			private final int slot = 2;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 142, -13) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 71, 30) {
 			private final int slot = 3;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, -3, 67) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 48, 53) {
 			private final int slot = 4;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 69, 44) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 71, 54) {
 			private final int slot = 5;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 61, 77) {
+			private final int slot = 6;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 143, 7) {
+			private final int slot = 7;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 133, 70) {
-			private final int slot = 6;
-			private int x = Dianjiechi3Menu.this.x;
-			private int y = Dianjiechi3Menu.this.y;
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 166, 8) {
+			private final int slot = 8;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 143, 31) {
+			private final int slot = 9;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 166, 31) {
+			private final int slot = 10;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 143, 54) {
+			private final int slot = 11;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 166, 53) {
+			private final int slot = 12;
+			private int x = Shiyantai6Menu.this.x;
+			private int y = Shiyantai6Menu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -134,9 +179,9 @@ public class Dianjiechi3Menu extends AbstractContainerMenu implements Supplier<M
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -6 + 8 + sj * 18, 27 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, 36 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, -6 + 8 + si * 18, 27 + 142));
+			this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, 36 + 142));
 	}
 
 	@Override
@@ -159,16 +204,16 @@ public class Dianjiechi3Menu extends AbstractContainerMenu implements Supplier<M
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 7) {
-				if (!this.moveItemStackTo(itemstack1, 7, this.slots.size(), true))
+			if (index < 13) {
+				if (!this.moveItemStackTo(itemstack1, 13, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 7, false)) {
-				if (index < 7 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 7 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 13, false)) {
+				if (index < 13 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 13 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 7, 7 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 13, 13 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

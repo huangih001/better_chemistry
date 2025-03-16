@@ -11,14 +11,14 @@ import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.restart_chemistry.world.inventory.Shiyantai5Menu;
-import net.mcreator.restart_chemistry.world.inventory.Shiyantai3Menu;
-import net.mcreator.restart_chemistry.world.inventory.Dianjiechi3Menu;
+import net.mcreator.restart_chemistry.world.inventory.Shiyantai6Menu;
+import net.mcreator.restart_chemistry.world.inventory.Rongyandianjiechi3Menu;
+import net.mcreator.restart_chemistry.world.inventory.Dianjiechi4Menu;
 import net.mcreator.restart_chemistry.RestartChemistryMod;
 
 public class RestartChemistryModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, RestartChemistryMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<Shiyantai3Menu>> SHIYANTAI_3 = REGISTRY.register("shiyantai_3", () -> IMenuTypeExtension.create(Shiyantai3Menu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<Shiyantai5Menu>> SHIYANTAI_5 = REGISTRY.register("shiyantai_5", () -> IMenuTypeExtension.create(Shiyantai5Menu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<Dianjiechi3Menu>> DIANJIECHI_3 = REGISTRY.register("dianjiechi_3", () -> IMenuTypeExtension.create(Dianjiechi3Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<Rongyandianjiechi3Menu>> RONGYANDIANJIECHI_3 = REGISTRY.register("rongyandianjiechi_3", () -> IMenuTypeExtension.create(Rongyandianjiechi3Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<Dianjiechi4Menu>> DIANJIECHI_4 = REGISTRY.register("dianjiechi_4", () -> IMenuTypeExtension.create(Dianjiechi4Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<Shiyantai6Menu>> SHIYANTAI_6 = REGISTRY.register("shiyantai_6", () -> IMenuTypeExtension.create(Shiyantai6Menu::new));
 }

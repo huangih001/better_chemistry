@@ -37,7 +37,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.world.inventory.Dianjiechi3Menu;
+import net.mcreator.restart_chemistry.world.inventory.Dianjiechi4Menu;
 import net.mcreator.restart_chemistry.procedures.DianjieChiDangYouJiFangKuaiShiProcedure;
 import net.mcreator.restart_chemistry.block.entity.DianjieChiBlockEntity;
 
@@ -120,7 +120,7 @@ public class DianjieChiBlock extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new Dianjiechi3Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new Dianjiechi4Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

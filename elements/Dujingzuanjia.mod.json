@@ -3,26 +3,23 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "iron_helmet",
+    "textureHelmet": "diamond_helmet",
     "enableBody": true,
-    "textureBody": "iron_chestplate",
+    "textureBody": "diamond_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "iron_leggings",
+    "textureLeggings": "diamond_leggings",
     "enableBoots": true,
-    "textureBoots": "iron_boots",
+    "textureBoots": "diamond_boots",
     "creativeTabs": [
       {
         "value": "COMBAT"
-      },
-      {
-        "value": "CUSTOM:BetterChemistry"
       }
     ],
-    "armorTextureFile": "gp_iron",
-    "helmetName": "镀金铁头盔",
-    "bodyName": "镀金铁胸甲",
-    "leggingsName": "镀金铁护腿",
-    "bootsName": "镀金铁靴子",
+    "armorTextureFile": "gp_diamond",
+    "helmetName": "镀金钻石头盔",
+    "bodyName": "镀金钻石胸甲",
+    "leggingsName": "镀金钻石护腿",
+    "bootsName": "镀金钻石靴子",
     "helmetSpecialInformation": {
       "fixedValue": []
     },
@@ -70,33 +67,33 @@
       "fixedValue": false
     },
     "leggingsGlowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "bootsGlowCondition": {
       "fixedValue": false
     },
     "helmetPiglinNeutral": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "bodyPiglinNeutral": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "leggingsPiglinNeutral": {
       "fixedValue": false
     },
     "bootsPiglinNeutral": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "maxDamage": 15,
-    "damageValueHelmet": 4,
-    "damageValueBody": 7,
-    "damageValueLeggings": 6,
-    "damageValueBoots": 3,
-    "enchantability": 17,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_iron"
+      "value": ""
     },
     "repairItems": []
   }

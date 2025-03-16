@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "fluid",
   "definition": {
-    "name": "硝酸金溶液",
-    "bucketName": "硝酸金溶液",
+    "name": "四氯合金酸",
+    "bucketName": "四氯合金酸溶液",
     "textureStill": "liu-jing",
     "textureFlowing": "liu-dong",
     "textureRenderOverlay": "",

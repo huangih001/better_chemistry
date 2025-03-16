@@ -3,20 +3,20 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 176,
-    "height": 166,
-    "inventoryOffsetX": -6,
-    "inventoryOffsetY": 27,
+    "width": 230,
+    "height": 207,
+    "inventoryOffsetX": -24,
+    "inventoryOffsetY": 21,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
         "type": "image",
         "data": {
-          "image": "dian_jie_chi_.png",
+          "image": "rong_yan_dian_jie_chi_.png",
           "use1Xscale": false,
-          "x": 90,
-          "y": 9,
+          "x": 99,
+          "y": 6,
           "locked": false
         }
       },
@@ -34,24 +34,21 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 122,
-          "y": 72,
+          "x": 275,
+          "y": 19,
           "locked": false
         }
       },
       {
-        "type": "label",
+        "type": "button",
         "data": {
-          "name": "label_dian_jie_chi",
-          "text": {
-            "fixedValue": "电解池"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 194,
-          "y": 19,
+          "name": "button_kai_shi_fan_ying",
+          "text": "开始反应",
+          "isUndecorated": false,
+          "width": 46,
+          "height": 20,
+          "x": 276,
+          "y": 142,
           "locked": false
         }
       },
@@ -69,8 +66,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 194,
-          "y": 34,
+          "x": 140,
+          "y": 21,
           "locked": false
         }
       },
@@ -88,8 +85,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 266,
-          "y": 71,
+          "x": 202,
+          "y": 32,
           "locked": false
         }
       },
@@ -107,21 +104,27 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 267,
-          "y": 23,
+          "x": 255,
+          "y": 63,
           "locked": false
         }
       },
       {
-        "type": "outputslot",
+        "type": "inputslot",
         "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 4,
           "disablePickup": {
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 122,
-          "y": 103,
+          "x": 132,
+          "y": 81,
           "locked": false
         }
       },
@@ -133,8 +136,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 194,
-          "y": 80,
+          "x": 131,
+          "y": 61,
           "locked": false
         }
       },
@@ -146,31 +149,28 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 258,
-          "y": 106,
+          "x": 131,
+          "y": 100,
           "locked": false
         }
       },
       {
-        "type": "button",
+        "type": "outputslot",
         "data": {
-          "name": "button_kai_shi_fan_ying",
-          "text": "开始反应",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "DianjieChiDangYouJiFangKuaiShi"
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": false
           },
-          "width": 46,
-          "height": 20,
-          "x": 107,
-          "y": 29,
+          "dropItemsWhenNotBound": true,
+          "x": 121,
+          "y": 21,
           "locked": false
         }
       }
     ],
     "gridSettings": {
-      "sx": 4,
-      "sy": 1,
+      "sx": 18,
+      "sy": 18,
       "ox": 11,
       "oy": 15,
       "snapOnGrid": false

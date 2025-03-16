@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "腐蚀",
-    "icon": "fu_shi_",
+    "icon": "suan_shi_",
     "color": {
       "value": -1,
       "falpha": 0.0

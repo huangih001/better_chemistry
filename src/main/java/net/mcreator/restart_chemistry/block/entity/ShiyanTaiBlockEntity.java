@@ -18,7 +18,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.world.inventory.Shiyantai5Menu;
+import net.mcreator.restart_chemistry.world.inventory.Shiyantai6Menu;
 import net.mcreator.restart_chemistry.init.RestartChemistryModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -86,7 +86,7 @@ public class ShiyanTaiBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new Shiyantai5Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new Shiyantai6Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

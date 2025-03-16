@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "中毒",
-    "icon": "zhong_du_",
+    "icon": "lu_zhong_du_",
     "color": {
       "value": -1,
       "falpha": 0.0

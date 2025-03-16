@@ -68,6 +68,10 @@ public class RestartChemistryModTabs {
 			tabData.accept(RestartChemistryModItems.JINGTIEJIA_LEGGINGS.get());
 			tabData.accept(RestartChemistryModItems.JINGTIEJIA_BOOTS.get());
 			tabData.accept(RestartChemistryModItems.DUJINGJIAN.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_HELMET.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_CHESTPLATE.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_LEGGINGS.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(RestartChemistryModItems.DUJINGGAO.get());
 			tabData.accept(RestartChemistryModItems.DUJNGCHAN.get());

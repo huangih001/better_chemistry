@@ -22,14 +22,13 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.procedures.Shiyantai3GaiGUIDaKaiShiProcedure;
 import net.mcreator.restart_chemistry.init.RestartChemistryModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Shiyantai3Menu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class Rongyandianjiechi3Menu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -42,11 +41,11 @@ public class Shiyantai3Menu extends AbstractContainerMenu implements Supplier<Ma
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public Shiyantai3Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(RestartChemistryModMenus.SHIYANTAI_3.get(), id);
+	public Rongyandianjiechi3Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(RestartChemistryModMenus.RONGYANDIANJIECHI_3.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(5);
+		this.internal = new ItemStackHandler(8);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -83,35 +82,55 @@ public class Shiyantai3Menu extends AbstractContainerMenu implements Supplier<Ma
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 51, 50) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 177, 3) {
 			private final int slot = 0;
-			private int x = Shiyantai3Menu.this.x;
-			private int y = Shiyantai3Menu.this.y;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 231, 50) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 42, 5) {
 			private final int slot = 1;
-			private int x = Shiyantai3Menu.this.x;
-			private int y = Shiyantai3Menu.this.y;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 104, 16) {
+			private final int slot = 2;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 157, 47) {
+			private final int slot = 3;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 34, 65) {
+			private final int slot = 4;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 33, 45) {
+			private final int slot = 5;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 132, 77) {
-			private final int slot = 2;
-			private int x = Shiyantai3Menu.this.x;
-			private int y = Shiyantai3Menu.this.y;
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 33, 84) {
+			private final int slot = 6;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 78, 50) {
-			private final int slot = 3;
-			private int x = Shiyantai3Menu.this.x;
-			private int y = Shiyantai3Menu.this.y;
-		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 204, 50) {
-			private final int slot = 4;
-			private int x = Shiyantai3Menu.this.x;
-			private int y = Shiyantai3Menu.this.y;
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 23, 5) {
+			private final int slot = 7;
+			private int x = Rongyandianjiechi3Menu.this.x;
+			private int y = Rongyandianjiechi3Menu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -120,10 +139,9 @@ public class Shiyantai3Menu extends AbstractContainerMenu implements Supplier<Ma
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 62 + 8 + sj * 18, 15 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, 41 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 62 + 8 + si * 18, 15 + 142));
-		Shiyantai3GaiGUIDaKaiShiProcedure.execute(entity);
+			this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, 41 + 142));
 	}
 
 	@Override
@@ -146,16 +164,16 @@ public class Shiyantai3Menu extends AbstractContainerMenu implements Supplier<Ma
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 5) {
-				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
+			if (index < 8) {
+				if (!this.moveItemStackTo(itemstack1, 8, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
-				if (index < 5 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 8, false)) {
+				if (index < 8 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 8 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 8, 8 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

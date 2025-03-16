@@ -18,7 +18,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.world.inventory.Dianjiechi4Menu;
+import net.mcreator.restart_chemistry.world.inventory.Rongyandianjiechi3Menu;
 import net.mcreator.restart_chemistry.init.RestartChemistryModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -27,12 +27,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class DianjieChiBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
+public class RongyandianjiechiBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
-	public DianjieChiBlockEntity(BlockPos position, BlockState state) {
-		super(RestartChemistryModBlockEntities.DIANJIE_CHI.get(), position, state);
+	public RongyandianjiechiBlockEntity(BlockPos position, BlockState state) {
+		super(RestartChemistryModBlockEntities.RONGYANDIANJIECHI.get(), position, state);
 	}
 
 	@Override
@@ -76,7 +76,7 @@ public class DianjieChiBlockEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("dianjie_chi");
+		return Component.literal("rongyandianjiechi");
 	}
 
 	@Override
@@ -86,12 +86,12 @@ public class DianjieChiBlockEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new Dianjiechi4Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new Rongyandianjiechi3Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("化学电解池");
+		return Component.literal("熔盐电解池");
 	}
 
 	@Override

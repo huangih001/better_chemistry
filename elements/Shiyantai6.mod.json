@@ -3,36 +3,52 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 216,
-    "height": 193,
-    "inventoryOffsetX": -2,
-    "inventoryOffsetY": 16,
+    "width": 230,
+    "height": 204,
+    "inventoryOffsetX": -24,
+    "inventoryOffsetY": 17,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
+        "type": "image",
+        "data": {
+          "image": "shi_yan_tai_.png",
+          "use1Xscale": false,
+          "x": 99,
+          "y": 1,
+          "locked": false
+        }
+      },
+      {
         "type": "button",
         "data": {
-          "name": "button_kai_shi_shi_yan",
-          "text": "开始实验",
+          "name": "button_kai_shi_fan_ying",
+          "text": "开始反应",
           "isUndecorated": false,
           "onClick": {
             "name": "ShiyanTaiDangYouJiFangKuaiShi"
           },
           "width": 46,
           "height": 20,
-          "x": 257,
-          "y": 106,
+          "x": 275,
+          "y": 140,
           "locked": false
         }
       },
       {
-        "type": "image",
+        "type": "label",
         "data": {
-          "image": "3a62c8ac09e8932c7b180c8b24ebd55f.png",
-          "use1Xscale": false,
-          "x": 96,
-          "y": -1,
+          "name": "label_hua_xue_shi_yan_tai",
+          "text": {
+            "fixedValue": "化学实验台"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 194,
+          "y": 12,
           "locked": false
         }
       },
@@ -50,8 +66,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 22,
+          "x": 147,
+          "y": 26,
           "locked": false
         }
       },
@@ -69,8 +85,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 166,
-          "y": 22,
+          "x": 169,
+          "y": 26,
           "locked": false
         }
       },
@@ -88,8 +104,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 44,
+          "x": 146,
+          "y": 47,
           "locked": false
         }
       },
@@ -107,8 +123,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 166,
-          "y": 44,
+          "x": 169,
+          "y": 47,
           "locked": false
         }
       },
@@ -126,8 +142,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 67,
+          "x": 146,
+          "y": 70,
           "locked": false
         }
       },
@@ -145,8 +161,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 166,
-          "y": 67,
+          "x": 169,
+          "y": 71,
           "locked": false
         }
       },
@@ -164,7 +180,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 156,
+          "x": 159,
           "y": 94,
           "locked": false
         }
@@ -177,8 +193,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 236,
-          "y": 22,
+          "x": 241,
+          "y": 24,
           "locked": false
         }
       },
@@ -190,8 +206,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 261,
-          "y": 22,
+          "x": 264,
+          "y": 25,
           "locked": false
         }
       },
@@ -203,8 +219,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 236,
-          "y": 44,
+          "x": 241,
+          "y": 48,
           "locked": false
         }
       },
@@ -216,8 +232,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 261,
-          "y": 44,
+          "x": 264,
+          "y": 48,
           "locked": false
         }
       },
@@ -229,8 +245,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 236,
-          "y": 67,
+          "x": 241,
+          "y": 71,
           "locked": false
         }
       },
@@ -242,34 +258,18 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 261,
-          "y": 67,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_hua_xue_shi_yan_tai",
-          "text": {
-            "fixedValue": "化学试验台"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 196,
-          "y": 13,
+          "x": 264,
+          "y": 70,
           "locked": false
         }
       }
     ],
     "gridSettings": {
-      "sx": 10,
-      "sy": 9,
+      "sx": 14,
+      "sy": 7,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

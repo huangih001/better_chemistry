@@ -198,7 +198,7 @@
     "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "Dianjiechi3",
+    "guiBoundTo": "Dianjiechi4",
     "openGUIOnRightClick": true,
     "inventorySize": 7,
     "inventoryStackSize": 1,

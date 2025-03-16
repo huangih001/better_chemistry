@@ -3,26 +3,52 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 300,
-    "height": 197,
-    "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "width": 230,
+    "height": 211,
+    "inventoryOffsetX": -24,
+    "inventoryOffsetY": 20,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
+        "type": "image",
+        "data": {
+          "image": "dianjiechi5.png",
+          "use1Xscale": false,
+          "x": 99,
+          "y": 3,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kai_shi_fan_ying",
+          "text": "开始反应",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "DianjieChiDangYouJiFangKuaiShi"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 276,
+          "y": 142,
+          "locked": false
+        }
+      },
+      {
         "type": "label",
         "data": {
-          "name": "label_hua_xue_shi_yan_tai",
+          "name": "label_dian_jie_chi",
           "text": {
-            "fixedValue": "化学实验台"
+            "fixedValue": "电解池"
           },
           "color": {
-            "value": -16737895,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 195,
-          "y": 44,
+          "x": 202,
+          "y": 15,
           "locked": false
         }
       },
@@ -40,21 +66,27 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 114,
-          "y": 71,
+          "x": 131,
+          "y": 67,
           "locked": false
         }
       },
       {
-        "type": "outputslot",
+        "type": "inputslot",
         "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
           "disablePickup": {
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 294,
-          "y": 71,
+          "x": 203,
+          "y": 28,
           "locked": false
         }
       },
@@ -72,24 +104,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 195,
-          "y": 98,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_fan_ying_tiao_jian",
-          "text": {
-            "fixedValue": "反应条件"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 195,
-          "y": 89,
+          "x": 274,
+          "y": 66,
           "locked": false
         }
       },
@@ -107,8 +123,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 71,
+          "x": 275,
+          "y": 17,
           "locked": false
         }
       },
@@ -120,37 +136,44 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 267,
-          "y": 71,
+          "x": 130,
+          "y": 97,
           "locked": false
         }
       },
       {
-        "type": "button",
+        "type": "outputslot",
         "data": {
-          "name": "button_kai_shi_shi_yan",
-          "text": "开始实验",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "ShiyanTaiDangYouJiFangKuaiShi"
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
           },
-          "width": 46,
-          "height": 20,
-          "x": 240,
-          "y": 98,
+          "dropItemsWhenNotBound": true,
+          "x": 202,
+          "y": 74,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 266,
+          "y": 100,
           "locked": false
         }
       }
     ],
-    "onOpen": {
-      "name": "Shiyantai3GaiGUIDaKaiShi"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

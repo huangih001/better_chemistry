@@ -16,28 +16,28 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.restart_chemistry.world.inventory.Shiyantai3Menu;
-import net.mcreator.restart_chemistry.procedures.ShiyanTaiDangYouJiFangKuaiShiProcedure;
+import net.mcreator.restart_chemistry.world.inventory.Dianjiechi4Menu;
+import net.mcreator.restart_chemistry.procedures.DianjieChiDangYouJiFangKuaiShiProcedure;
 import net.mcreator.restart_chemistry.RestartChemistryMod;
 
 import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record Shiyantai3ButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record Dianjiechi4ButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<Shiyantai3ButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(RestartChemistryMod.MODID, "shiyantai_3_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, Shiyantai3ButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, Shiyantai3ButtonMessage message) -> {
+	public static final Type<Dianjiechi4ButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(RestartChemistryMod.MODID, "dianjiechi_4_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, Dianjiechi4ButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, Dianjiechi4ButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new Shiyantai3ButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new Dianjiechi4ButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<Shiyantai3ButtonMessage> type() {
+	public Type<Dianjiechi4ButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final Shiyantai3ButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final Dianjiechi4ButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				Player entity = context.player();
@@ -55,18 +55,18 @@ public record Shiyantai3ButtonMessage(int buttonID, int x, int y, int z) impleme
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = Shiyantai3Menu.guistate;
+		HashMap guistate = Dianjiechi4Menu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			ShiyanTaiDangYouJiFangKuaiShiProcedure.execute(world, x, y, z, entity);
+			DianjieChiDangYouJiFangKuaiShiProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		RestartChemistryMod.addNetworkMessage(Shiyantai3ButtonMessage.TYPE, Shiyantai3ButtonMessage.STREAM_CODEC, Shiyantai3ButtonMessage::handleData);
+		RestartChemistryMod.addNetworkMessage(Dianjiechi4ButtonMessage.TYPE, Dianjiechi4ButtonMessage.STREAM_CODEC, Dianjiechi4ButtonMessage::handleData);
 	}
 }

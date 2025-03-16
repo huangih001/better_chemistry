@@ -36,6 +36,7 @@ import net.mcreator.restart_chemistry.item.JiaoTouDiGuanItem;
 import net.mcreator.restart_chemistry.item.HandnaItem;
 import net.mcreator.restart_chemistry.item.FudadianduiItem;
 import net.mcreator.restart_chemistry.item.DujngchanItem;
+import net.mcreator.restart_chemistry.item.DujingzuanjiaItem;
 import net.mcreator.restart_chemistry.item.DujingjianItem;
 import net.mcreator.restart_chemistry.item.DujinggaoItem;
 import net.mcreator.restart_chemistry.item.DujingfuItem;
@@ -88,6 +89,10 @@ public class RestartChemistryModItems {
 	public static final DeferredItem<Item> DUJINGCHU = REGISTRY.register("dujingchu", DujingchuItem::new);
 	public static final DeferredItem<Item> LVHUANA_BUCKET = REGISTRY.register("lvhuana_bucket", LvhuanaItem::new);
 	public static final DeferredItem<Item> LVQI = REGISTRY.register("lvqi", LvqiItem::new);
+	public static final DeferredItem<Item> DUJINGZUANJIA_HELMET = REGISTRY.register("dujingzuanjia_helmet", DujingzuanjiaItem.Helmet::new);
+	public static final DeferredItem<Item> DUJINGZUANJIA_CHESTPLATE = REGISTRY.register("dujingzuanjia_chestplate", DujingzuanjiaItem.Chestplate::new);
+	public static final DeferredItem<Item> DUJINGZUANJIA_LEGGINGS = REGISTRY.register("dujingzuanjia_leggings", DujingzuanjiaItem.Leggings::new);
+	public static final DeferredItem<Item> DUJINGZUANJIA_BOOTS = REGISTRY.register("dujingzuanjia_boots", DujingzuanjiaItem.Boots::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

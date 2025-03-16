@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="Not specified"
+license="Ace3 Style BSD"
 
 [[mods]]
 modId="restart_chemistry"
