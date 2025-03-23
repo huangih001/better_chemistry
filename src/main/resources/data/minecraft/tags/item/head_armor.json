@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "restart_chemistry:dujinghejingjia_helmet",
     "restart_chemistry:dujingzuanjia_helmet",
     "restart_chemistry:jingtiejia_helmet"
   ]

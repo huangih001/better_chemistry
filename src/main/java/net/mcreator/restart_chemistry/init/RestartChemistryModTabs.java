@@ -56,8 +56,31 @@ public class RestartChemistryModTabs {
 				tabData.accept(RestartChemistryModItems.JINGTIEJIA_CHESTPLATE.get());
 				tabData.accept(RestartChemistryModItems.JINGTIEJIA_LEGGINGS.get());
 				tabData.accept(RestartChemistryModItems.JINGTIEJIA_BOOTS.get());
+				tabData.accept(RestartChemistryModItems.DUJINGGAO.get());
+				tabData.accept(RestartChemistryModItems.DUJINGJIAN.get());
+				tabData.accept(RestartChemistryModItems.DUJNGCHAN.get());
+				tabData.accept(RestartChemistryModItems.DUJINGFU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGCHU.get());
 				tabData.accept(RestartChemistryModItems.LVHUANA_BUCKET.get());
 				tabData.accept(RestartChemistryModItems.LVQI.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_HELMET.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_CHESTPLATE.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_LEGGINGS.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_BOOTS.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_HELMET.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_CHESTPLATE.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_LEGGINGS.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_BOOTS.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANGAO.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANFU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANCHU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANQIU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGZUANJIAN.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGGAO.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGFU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGCHU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGQIU.get());
+				tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIAN.get());
 			}).build());
 
 	@SubscribeEvent
@@ -72,11 +95,25 @@ public class RestartChemistryModTabs {
 			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_CHESTPLATE.get());
 			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_LEGGINGS.get());
 			tabData.accept(RestartChemistryModItems.DUJINGZUANJIA_BOOTS.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_HELMET.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_CHESTPLATE.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_LEGGINGS.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIA_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(RestartChemistryModItems.DUJINGGAO.get());
 			tabData.accept(RestartChemistryModItems.DUJNGCHAN.get());
 			tabData.accept(RestartChemistryModItems.DUJINGFU.get());
 			tabData.accept(RestartChemistryModItems.DUJINGCHU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANGAO.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANFU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANCHU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANQIU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGZUANJIAN.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGGAO.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGFU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGCHU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGQIU.get());
+			tabData.accept(RestartChemistryModItems.DUJINGHEJINGJIAN.get());
 		}
 	}
 }

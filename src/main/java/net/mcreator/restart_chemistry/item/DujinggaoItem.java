@@ -44,6 +44,6 @@ public class DujinggaoItem extends PickaxeItem {
 	};
 
 	public DujinggaoItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -3f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3.5f, -2.8f)));
 	}
 }

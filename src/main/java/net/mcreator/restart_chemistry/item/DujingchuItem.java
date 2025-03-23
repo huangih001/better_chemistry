@@ -14,12 +14,12 @@ public class DujingchuItem extends HoeItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 270;
+			return 141;
 		}
 
 		@Override
 		public float getSpeed() {
-			return 7.5f;
+			return 6.5f;
 		}
 
 		@Override

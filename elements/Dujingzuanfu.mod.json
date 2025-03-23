@@ -1,0 +1,38 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "diamond_axe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "镀金钻石斧",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:BetterChemistry"
+      }
+    ],
+    "efficiency": 8.5,
+    "attackSpeed": 0.9,
+    "enchantability": 13,
+    "damageVsEntity": 9.5,
+    "usageCount": 797,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

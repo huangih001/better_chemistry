@@ -14,12 +14,12 @@ public class DujngchanItem extends ShovelItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 270;
+			return 141;
 		}
 
 		@Override
 		public float getSpeed() {
-			return 7.5f;
+			return 6.5f;
 		}
 
 		@Override
@@ -44,6 +44,6 @@ public class DujngchanItem extends ShovelItem {
 	};
 
 	public DujngchanItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3.5f, -3f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 4f, -3f)));
 	}
 }

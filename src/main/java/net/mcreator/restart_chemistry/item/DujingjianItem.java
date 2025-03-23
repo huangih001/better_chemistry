@@ -13,12 +13,12 @@ public class DujingjianItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 270;
+			return 282;
 		}
 
 		@Override
 		public float getSpeed() {
-			return 4f;
+			return 6.5f;
 		}
 
 		@Override

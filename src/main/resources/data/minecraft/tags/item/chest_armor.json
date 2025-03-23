@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "restart_chemistry:dujinghejingjia_chestplate",
     "restart_chemistry:dujingzuanjia_chestplate",
     "restart_chemistry:jingtiejia_chestplate"
   ]

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "restart_chemistry:dujinghejingfu",
+    "restart_chemistry:dujingzuanfu",
     "restart_chemistry:dujingfu"
   ]
 }

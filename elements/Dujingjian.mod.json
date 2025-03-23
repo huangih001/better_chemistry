@@ -15,13 +15,16 @@
     "creativeTabs": [
       {
         "value": "COMBAT"
+      },
+      {
+        "value": "CUSTOM:BetterChemistry"
       }
     ],
-    "efficiency": 4.0,
+    "efficiency": 6.5,
     "attackSpeed": 1.6,
     "enchantability": 17,
     "damageVsEntity": 6.5,
-    "usageCount": 270,
+    "usageCount": 282,
     "glowCondition": {
       "fixedValue": false
     },

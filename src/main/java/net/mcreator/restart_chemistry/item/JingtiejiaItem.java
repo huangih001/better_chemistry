@@ -32,9 +32,9 @@ public abstract class JingtiejiaItem extends ArmorItem {
 				map.put(ArmorItem.Type.BOOTS, 3);
 				map.put(ArmorItem.Type.LEGGINGS, 6);
 				map.put(ArmorItem.Type.CHESTPLATE, 7);
-				map.put(ArmorItem.Type.HELMET, 4);
+				map.put(ArmorItem.Type.HELMET, 3);
 				map.put(ArmorItem.Type.BODY, 7);
-			}), 17, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("restart_chemistry:gp_iron"))), 0f, 0f);
+			}), 12, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("restart_chemistry:gp_iron"))), 0.5f, 0f);
 			registerHelper.register(ResourceLocation.parse("restart_chemistry:jingtiejia"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
@@ -46,7 +46,7 @@ public abstract class JingtiejiaItem extends ArmorItem {
 
 	public static class Helmet extends JingtiejiaItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15)));
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18)));
 		}
 
 		@Override
@@ -57,7 +57,7 @@ public abstract class JingtiejiaItem extends ArmorItem {
 
 	public static class Chestplate extends JingtiejiaItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15)));
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(18)));
 		}
 
 		@Override
@@ -68,13 +68,18 @@ public abstract class JingtiejiaItem extends ArmorItem {
 
 	public static class Leggings extends JingtiejiaItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15)));
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(18)));
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
 		}
 	}
 
 	public static class Boots extends JingtiejiaItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15)));
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18)));
 		}
 
 		@Override

@@ -14,12 +14,12 @@ public class DujingfuItem extends AxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 270;
+			return 141;
 		}
 
 		@Override
 		public float getSpeed() {
-			return 7.5f;
+			return 6.5f;
 		}
 
 		@Override
@@ -34,7 +34,7 @@ public class DujingfuItem extends AxeItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 2;
+			return 17;
 		}
 
 		@Override
@@ -44,6 +44,6 @@ public class DujingfuItem extends AxeItem {
 	};
 
 	public DujingfuItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 8.3f, -2.7f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 8.5f, -3.1f)));
 	}
 }

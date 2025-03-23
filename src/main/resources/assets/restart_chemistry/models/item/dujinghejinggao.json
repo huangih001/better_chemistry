@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "restart_chemistry:item/netherite_pickaxe"
+  }
+}
