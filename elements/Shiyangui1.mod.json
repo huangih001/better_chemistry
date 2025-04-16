@@ -1,0 +1,45 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 230,
+    "height": 215,
+    "inventoryOffsetX": -24,
+    "inventoryOffsetY": 23,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui1.png",
+          "use1Xscale": false,
+          "x": 99,
+          "y": 7,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_qu_xiao_gou_jian",
+          "text": "取消构建",
+          "isUndecorated": false,
+          "width": 46,
+          "height": 20,
+          "x": 275,
+          "y": 143,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

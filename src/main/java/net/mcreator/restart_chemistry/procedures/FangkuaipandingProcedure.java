@@ -35,7 +35,7 @@ public class FangkuaipandingProcedure {
 				}
 			}
 		} else if (blockstate.getBlock() == RestartChemistryModBlocks.RONGYANDIANJIECHI.get()) {
-			if (PlaceconflictProcedure.execute(world, x, y, z, -1, 1, 1, 1, 0, -1, entity.getYRot())) {
+			if (PlaceconflictProcedure.execute(world, x, y, z, 1, 0, 0, 0, 0, 0, entity.getYRot())) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
 				}

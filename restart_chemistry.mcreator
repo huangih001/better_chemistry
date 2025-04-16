@@ -460,19 +460,6 @@
       "path": "~/hc_peifang"
     },
     {
-      "name": "Daoguan2",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daoguan_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/restart_chemistry/advancement/daoguan_2.json"
-        ]
-      },
-      "path": "~/achievement"
-    },
-    {
       "name": "Shiyantai2",
       "type": "achievement",
       "compiles": true,
@@ -1678,6 +1665,58 @@
           "src/main/resources/assets/restart_chemistry/models/item/dujinghejingjian.json"
         ]
       }
+    },
+    {
+      "name": "Shiyangui1",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiyangui_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/world/inventory/Shiyangui1Menu.java",
+          "src/main/java/net/mcreator/restart_chemistry/client/gui/Shiyangui1Screen.java"
+        ]
+      }
+    },
+    {
+      "name": "Shiyangui2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiyangui_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/world/inventory/Shiyangui2Menu.java",
+          "src/main/java/net/mcreator/restart_chemistry/client/gui/Shiyangui2Screen.java"
+        ]
+      }
+    },
+    {
+      "name": "Shiyangui3",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiyangui_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/client/gui/Shiyangui3Screen.java",
+          "src/main/java/net/mcreator/restart_chemistry/world/inventory/Shiyangui3Menu.java"
+        ]
+      }
+    },
+    {
+      "name": "Shiyangui4",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiyangui_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/restart_chemistry/world/inventory/Shiyangui4Menu.java",
+          "src/main/java/net/mcreator/restart_chemistry/client/gui/Shiyangui4Screen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1704,7 +1743,6 @@
       "~CUSTOM:Dujingzuangao",
       "~CUSTOM:Dujinggao"
     ],
-    "BLOCKS:minecraft:liukuang": [],
     "BLOCKS:minecraft:liu": [
       "Blocks.MAGMA",
       "Blocks.BLACKSTONE",
@@ -1728,18 +1766,18 @@
       "~CUSTOM:Rongyandianjiechi",
       "~CUSTOM:DianjieChi"
     ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:Sodiumoxideblock",
+      "~CUSTOM:Na"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:ShiyanTai"
+    ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Lvhuana",
       "~CUSTOM:Xiaosuanjing",
       "~CUSTOM:Liusuanry",
       "~CUSTOM:Qingyanghuana"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:ShiyanTai"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:Sodiumoxideblock",
-      "~CUSTOM:Na"
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Dujingzuanqiu",
@@ -1786,11 +1824,11 @@
       "item.restart_chemistry.lvhuana_bucket": "氯化钠溶液",
       "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
-      "advancements.daoguan_2.title": " 玻璃导管",
       "block.restart_chemistry.lvhuana": "氯化钠溶液",
       "death.attack.salt_2.item": "%1$s   死于吃盐过量导致的肾衰竭",
       "item.restart_chemistry.dujingfu": "镀金铁斧",
       "item.restart_chemistry.liusuanry_bucket": "硫酸溶液",
+      "gui.restart_chemistry.shiyangui_2.button_qu_xiao_gou_jian": "取消构建",
       "block.restart_chemistry.na1": "钠块",
       "death.attack.salt_2": "%1$s   死于吃盐过量导致的肾衰竭",
       "fluid.restart_chemistry.xiaosuanjing": "四氯合金酸",
@@ -1819,6 +1857,7 @@
       "advancements.shiyantai_2.descr": "这是一个普通中学的化学实验室",
       "item.restart_chemistry.handna": "钠",
       "gui.restart_chemistry.shiyantai_6.button_kai_shi_fan_ying": "开始反应",
+      "gui.restart_chemistry.shiyangui_1.button_qu_xiao_gou_jian": "取消构建",
       "block.restart_chemistry.liukuai": "硫块",
       "item.better_chemistry.allyszqb": "补全的元素周期表",
       "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液",
@@ -1862,7 +1901,6 @@
       "item.restart_chemistry.dujinghejinggao": "镀金合金镐",
       "item.restart_chemistry.lou_dou.description_0": "漏斗——过滤小杂质的工具",
       "item.restart_chemistry.dujingzuanchu": "镀金钻石锄",
-      "advancements.daoguan_2.descr": "动.....动漫量？",
       "item.better_chemistry.yszqb": "元素周期表",
       "item.restart_chemistry.handna.description_1": "是碱金属元素的代表，质地柔软",
       "item.restart_chemistry.dujingzuanjia_chestplate": "镀金钻石胸甲",
@@ -1907,6 +1945,7 @@
       "item.restart_chemistry.dujingzuanjia_boots": "镀金钻石靴子",
       "block.restart_chemistry.shiyan_tai.description_0": "一切的开始",
       "item.restart_chemistry.yszqb.description_0": "一个正在探索中的终端记录仪",
+      "gui.restart_chemistry.shiyangui_3.button_qu_xiao_gou_jian": "取消构建",
       "advancements.shiguan_2.descr": " 对待它要像对待初恋一样小心",
       "advancements.dujingzuanchu_1.title": "镀金钻石锄",
       "item.restart_chemistry.jiiqipingyeti": "集气瓶-液体",
@@ -1929,11 +1968,11 @@
       "item.restart_chemistry.lvhuana_bucket": " 氯化钠溶液",
       "item.restart_chemistry.jiu_jing_deng": "酒精灯",
       "item.restart_chemistry.strangezd.description_0": "一个奇怪的终端，右键或许会出现些什么",
-      "advancements.daoguan_2.title": " 玻璃导管",
       "block.restart_chemistry.lvhuana": "氯化钠溶液",
       "death.attack.salt_2.item": "%1$s  被咸死了",
       "item.restart_chemistry.dujingfu": "镀金铁斧",
       "item.restart_chemistry.liusuanry_bucket": "硫酸溶液",
+      "gui.restart_chemistry.shiyangui_2.button_qu_xiao_gou_jian": "取消构建",
       "block.restart_chemistry.na1": "钠块",
       "death.attack.salt_2": "%1$s  死于吃盐过量导致的肾衰竭",
       "fluid.restart_chemistry.xiaosuanjing": "硝酸金溶液",
@@ -1962,6 +2001,7 @@
       "advancements.shiyantai_2.descr": "这是一个普通中学的化学实验室",
       "item.restart_chemistry.handna": "钠",
       "gui.restart_chemistry.shiyantai_6.button_kai_shi_fan_ying": "开始反应",
+      "gui.restart_chemistry.shiyangui_1.button_qu_xiao_gou_jian": "取消构建",
       "block.restart_chemistry.liukuai": "硫块",
       "item.better_chemistry.allyszqb": "补全的元素周期表",
       "item.restart_chemistry.qingyanghuana_bucket": "氢氧化钠溶液瓶",
@@ -2006,7 +2046,6 @@
       "item.restart_chemistry.dujinghejinggao": "镀金合金镐",
       "item.restart_chemistry.lou_dou.description_0": "漏斗——过滤小杂质的工具",
       "item.restart_chemistry.dujingzuanchu": "镀金钻石锄",
-      "advancements.daoguan_2.descr": "动.....动漫量？",
       "item.better_chemistry.yszqb": "元素周期表",
       "item.restart_chemistry.handna.description_1": "是碱金属元素的代表，质地柔软",
       "item.restart_chemistry.dujingzuanjia_chestplate": "镀金钻石胸甲",
@@ -2051,6 +2090,7 @@
       "item.restart_chemistry.dujingzuanjia_boots": "镀金钻石靴子",
       "block.restart_chemistry.shiyan_tai.description_0": "一切的开始",
       "item.restart_chemistry.yszqb.description_0": "一个正在探索中的终端记录仪",
+      "gui.restart_chemistry.shiyangui_3.button_qu_xiao_gou_jian": "取消构建",
       "advancements.shiguan_2.descr": "或许可以放些不明液体",
       "advancements.dujingzuanchu_1.title": "镀金钻石锄",
       "item.restart_chemistry.jiiqipingyeti": "集气瓶-液体",
@@ -2107,5 +2147,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.restart_chemistry"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202500113416
 }
