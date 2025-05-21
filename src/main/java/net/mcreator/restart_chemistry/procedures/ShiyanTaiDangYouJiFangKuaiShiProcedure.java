@@ -34,16 +34,7 @@ public class ShiyanTaiDangYouJiFangKuaiShiProcedure {
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(RestartChemistryModItems.YANGHUANA.get()).copy();
-				_setstack.setCount((int) (new Object() {
-					public int getAmount(int sltid) {
-						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-							if (stack != null)
-								return stack.getCount();
-						}
-						return 0;
-					}
-				}.getAmount(7) + 1));
+				_setstack.setCount((int) (getAmountInGUISlot(entity, 7) + 1));
 				((Slot) _slots.get(7)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
@@ -80,5 +71,14 @@ public class ShiyanTaiDangYouJiFangKuaiShiProcedure {
 				}
 			}
 		}
+	}
+
+	private static int getAmountInGUISlot(Entity entity, int sltid) {
+		if (entity instanceof Player player && player.containerMenu instanceof Supplier slotSupplier && slotSupplier.get() instanceof Map guiSlots) {
+			ItemStack stack = ((Slot) guiSlots.get(sltid)).getItem();
+			if (stack != null)
+				return stack.getCount();
+		}
+		return 0;
 	}
 }

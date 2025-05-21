@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -20,10 +20,10 @@
         "value": "CUSTOM:BetterChemistry"
       }
     ],
-    "efficiency": 4.0,
-    "attackSpeed": 1.0,
+    "efficiency": 9.5,
+    "attackSpeed": 1.2000000000000002,
     "enchantability": 18,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 6.5,
     "usageCount": 1032,
     "glowCondition": {
       "fixedValue": false
@@ -32,7 +32,7 @@
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
-    "stayInGridWhenCrafting": true,
+    "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }
 }

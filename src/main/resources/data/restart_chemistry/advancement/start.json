@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "restart_chemistry:textures/screens/747cda680be8c4b7f6c01c4a92903882.png",
     "icon": {
       "id": "restart_chemistry:logo"
     },
@@ -17,19 +17,9 @@
   },
   "criteria": {
     "start_0": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:glass"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
+        "to": "minecraft:overworld"
       }
     }
   }

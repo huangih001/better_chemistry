@@ -4,13 +4,12 @@ package net.mcreator.restart_chemistry.item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-public class DujingzuanjianItem extends PickaxeItem {
+public class DujingzuanjianItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
@@ -44,6 +43,6 @@ public class DujingzuanjianItem extends PickaxeItem {
 	};
 
 	public DujingzuanjianItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 6.5f, -3f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6.5f, -3f)));
 	}
 }

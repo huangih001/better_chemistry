@@ -1,0 +1,98 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 230,
+    "height": 212,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 23,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui4.png",
+          "use1Xscale": false,
+          "x": 99,
+          "y": 7,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ke_yi_gou_jian",
+          "image": "ke_yi_gou_jian_.png",
+          "hoveredImage": "",
+          "x": 166,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_wu_fa_gou_jian",
+          "image": "wu_fa_gou_jian_.png",
+          "hoveredImage": "",
+          "x": 165,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ke_yi_gou_jian1",
+          "image": "ke_yi_gou_jian_.png",
+          "hoveredImage": "",
+          "x": 207,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_wu_fa_gou_jian1",
+          "image": "wu_fa_gou_jian_.png",
+          "hoveredImage": "",
+          "x": 206,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ke_yi_gou_jian2",
+          "image": "ke_yi_gou_jian_.png",
+          "hoveredImage": "",
+          "x": 248,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_wu_fa_gou_jian2",
+          "image": "wu_fa_gou_jian_.png",
+          "hoveredImage": "",
+          "x": 248,
+          "y": 69,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
